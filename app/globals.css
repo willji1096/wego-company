@@ -1,26 +1,262 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "Pretendard Variable";
+  font-weight: 45 920;
+  font-style: normal;
+  font-display: swap;
+  src: url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/PretendardVariable.woff2")
+    format("woff2-variations");
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* --- Primitive tokens: Tailwind Slate (neutral) + custom brand scale anchored at #053AE7 --- */
+  --n-50:  #F8FAFC;
+  --n-100: #F1F5F9;
+  --n-200: #E2E8F0;
+  --n-300: #CBD5E1;
+  --n-400: #94A3B8;
+  --n-500: #64748B;
+  --n-600: #475569;
+  --n-700: #334155;
+  --n-800: #1E293B;
+  --n-900: #0F172A;
+  --n-950: #020617;
+
+  --b-50:  #EDF1FF;
+  --b-100: #D6DFFF;
+  --b-200: #ADC0FF;
+  --b-300: #8098FF;
+  --b-400: #4D70FF;
+  --b-500: #2552F5;
+  --b-600: #053AE7;
+  --b-700: #0430C0;
+  --b-800: #052599;
+  --b-900: #041B70;
+  --b-950: #030F40;
+
+  /* --- Semantic tokens: role → primitive mapping. Components reference these only. --- */
+  --bg: #ffffff;
+  --fg: var(--n-900);
+  --muted: var(--n-600);
+  --muted-soft: var(--n-500);
+  --border: var(--n-200);
+  --border-soft: var(--n-100);
+  --surface: var(--n-100);
+  --surface-alt: var(--n-200);
+
+  --brand: var(--b-600);
+  --brand-hover: var(--b-700);
+  --brand-soft: var(--b-100);
+  --brand-eyebrow: var(--b-300);
+
+  --ink: var(--n-950);
+  --ink-alt: var(--n-800);
+  --ink-line: var(--n-700);
+  --ink-fg: #ffffff;
+  --ink-muted: var(--n-400);
+
+  --brand-kidsda: #ffd4d4;
+  --brand-kidsda-fg: #1c0c0c;
+  --brand-toky: #f5f5f3;
+  --brand-toky-fg: #0b1220;
+  --brand-qentix: #0b1220;
+  --brand-qentix-fg: #ffffff;
+
+  --container-max: 1440px;
+  --gutter: clamp(20px, 4vw, 80px);
+
+  --ease-out-expo: cubic-bezier(0.19, 1, 0.22, 1);
+  --ease-out-quint: cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-background: var(--bg);
+  --color-foreground: var(--fg);
+  --color-muted: var(--muted);
+  --color-muted-soft: var(--muted-soft);
+  --color-border: var(--border);
+  --color-border-soft: var(--border-soft);
+  --color-surface: var(--surface);
+  --color-surface-alt: var(--surface-alt);
+
+  --color-brand: var(--brand);
+  --color-brand-hover: var(--brand-hover);
+  --color-brand-soft: var(--brand-soft);
+
+  --color-ink: var(--ink);
+  --color-ink-alt: var(--ink-alt);
+  --color-ink-line: var(--ink-line);
+  --color-ink-fg: var(--ink-fg);
+  --color-ink-muted: var(--ink-muted);
+
+  --color-kidsda: var(--brand-kidsda);
+  --color-kidsda-fg: var(--brand-kidsda-fg);
+  --color-toky: var(--brand-toky);
+  --color-toky-fg: var(--brand-toky-fg);
+  --color-qentix: var(--brand-qentix);
+  --color-qentix-fg: var(--brand-qentix-fg);
+
+  --font-sans: "Pretendard Variable", "Pretendard", -apple-system,
+    BlinkMacSystemFont, system-ui, sans-serif;
+  --font-display: "Pretendard Variable", "Pretendard", -apple-system, system-ui,
+    sans-serif;
+
+  --breakpoint-xs: 480px;
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1440px;
+  --breakpoint-3xl: 1600px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  scrollbar-gutter: stable;
+}
+
+html.lenis {
+  height: auto;
+}
+
+html.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+html.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-sans);
+  font-feature-settings: "ss03", "ss04", "cv11";
+  letter-spacing: -0.01em;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: var(--brand);
+  color: #ffffff;
+}
+
+@utility container-base {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+@utility text-balance {
+  text-wrap: balance;
+}
+
+@utility no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+@utility grid-lines {
+  background-image: linear-gradient(
+    to right,
+    var(--border-soft) 1px,
+    transparent 1px
+  );
+  background-size: calc(100% / 12) 100%;
+}
+
+@utility grid-lines-ink {
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.05) 1px,
+    transparent 1px
+  );
+  background-size: calc(100% / 12) 100%;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes grid-drift {
+  from { background-position: 0 0; }
+  to { background-position: 0 80px; }
+}
+
+@keyframes scan-line {
+  0% { transform: translateY(-12%); opacity: 0; }
+  20% { opacity: 0.9; }
+  80% { opacity: 0.9; }
+  100% { transform: translateY(112%); opacity: 0; }
+}
+
+@keyframes wave-slide {
+  from { transform: translate3d(0, 0, 0); }
+  to { transform: translate3d(-1200px, 0, 0); }
+}
+
+@keyframes aurora-a {
+  0%   { transform: translate3d(-10%, -15%, 0) scale(1); }
+  33%  { transform: translate3d(30%, 10%, 0)  scale(1.25); }
+  66%  { transform: translate3d(45%, -5%, 0)  scale(1.1); }
+  100% { transform: translate3d(-10%, -15%, 0) scale(1); }
+}
+
+@keyframes aurora-b {
+  0%   { transform: translate3d(60%, 40%, 0)  scale(1.2); }
+  33%  { transform: translate3d(20%, 60%, 0)  scale(1); }
+  66%  { transform: translate3d(70%, 20%, 0)  scale(1.35); }
+  100% { transform: translate3d(60%, 40%, 0)  scale(1.2); }
+}
+
+@keyframes aurora-c {
+  0%   { transform: translate3d(20%, 70%, 0)  scale(0.9); }
+  50%  { transform: translate3d(80%, 30%, 0)  scale(1.15); }
+  100% { transform: translate3d(20%, 70%, 0)  scale(0.9); }
+}
+
+@keyframes shimmer-sweep {
+  0%   { transform: translate3d(-60%, 0, 0) rotate(18deg); opacity: 0; }
+  20%  { opacity: 0.45; }
+  80%  { opacity: 0.45; }
+  100% { transform: translate3d(160%, 0, 0) rotate(18deg); opacity: 0; }
+}
+
+@keyframes wave-breathe {
+  0%, 100% { opacity: var(--wave-op, 0.4); }
+  50%      { opacity: calc(var(--wave-op, 0.4) * 1.6); }
+}
+
+.animate-marquee {
+  animation: marquee 40s linear infinite;
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-grid-drift {
+  animation: grid-drift 12s linear infinite;
+}
+
+.animate-scan {
+  animation: scan-line 6s cubic-bezier(0.55, 0, 0.45, 1) infinite;
 }

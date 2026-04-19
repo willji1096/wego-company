@@ -1,0 +1,25 @@
+{
+  "steps": 98,
+  "fileChanges": 17,
+  "errors": 0,
+  "startedAt": "2026-04-18T08:55:55.595Z",
+  "changedFiles": [
+    "/Users/willji/Desktop/알파미디어외주/위고컴퍼니/260418_위고컴퍼니 홈페이지/wego-company/components/sections/about/AboutHero.tsx",
+    "/Users/willji/Desktop/알파미디어외주/위고컴퍼니/260418_위고컴퍼니 홈페이지/wego-company/components/sections/about/Beliefs.tsx",
+    "/Users/willji/Desktop/알파미디어외주/위고컴퍼니/260418_위고컴퍼니 홈페이지/wego-company/components/sections/about/ConnectPeople.tsx",
+    "/Users/willji/Desktop/알파미디어외주/위고컴퍼니/260418_위고컴퍼니 홈페이지/wego-company/components/sections/about/Changes.tsx",
+    "/Users/willji/Desktop/알파미디어외주/위고컴퍼니/260418_위고컴퍼니 홈페이지/wego-company/components/sections/about/History.tsx",
+    "/Users/willji/Desktop/알파미디어외주/위고컴퍼니/260418_위고컴퍼니 홈페이지/wego-company/components/news/NewsHero.tsx",
+    "/Users/willji/Desktop/알파미디어외주/위고컴퍼니/260418_위고컴퍼니 홈페이지/wego-company/components/news/NewsList.tsx",
+    "/Users/willji/Desktop/알파미디어외주/위고컴퍼니/260418_위고컴퍼니 홈페이지/wego-company/app/news/[slug]/page.tsx",
+    "/Users/willji/Desktop/알파미디어외주/위고컴퍼니/260418_위고컴퍼니 홈페이지/wego-company/app/ir/page.tsx",
+    "/Users/willji/Desktop/알파미디어외주/위고컴퍼니/260418_위고컴퍼니 홈페이지/wego-company/app/ir/IRPageClient.tsx",
+    "/Users/willji/Desktop/알파미디어외주/위고컴퍼니/260418_위고컴퍼니 홈페이지/wego-company/lib/data/ir.ts",
+    "/Users/willji/Desktop/알파미디어외주/위고컴퍼니/260418_위고컴퍼니 홈페이지/wego-company/app/ir/[slug]/page.tsx",
+    "/Users/willji/Desktop/알파미디어외주/위고컴퍼니/260418_위고컴퍼니 홈페이지/wego-company/lib/validations/contact.ts",
+    "/Users/willji/Desktop/알파미디어외주/위고컴퍼니/260418_위고컴퍼니 홈페이지/wego-company/components/contact/ContactModal.tsx",
+    "/Users/willji/Desktop/알파미디어외주/위고컴퍼니/260418_위고컴퍼니 홈페이지/wego-company/components/ui/Counter.tsx",
+    "/Users/willji/Desktop/알파미디어외주/위고컴퍼니/260418_위고컴퍼니 홈페이지/wego-company/app/globals.css",
+    "/Users/willji/Desktop/알파미디어외주/위고컴퍼니/260418_위고컴퍼니 홈페이지/wego-company/components/sections/home/Hero.tsx"
+  ]
+}

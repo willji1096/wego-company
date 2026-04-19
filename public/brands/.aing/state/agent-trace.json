@@ -1,0 +1,17 @@
+{
+  "agents": [
+    {
+      "id": "unknown-03848614",
+      "name": "unknown",
+      "subagentType": "unknown",
+      "model": "sonnet",
+      "description": "",
+      "spawnedAt": "2026-04-18T10:38:48.614Z",
+      "status": "completed",
+      "completedAt": "2026-04-18T13:11:29.062Z",
+      "durationMs": 9160451
+    }
+  ],
+  "activeCount": 0,
+  "totalSpawned": 1
+}

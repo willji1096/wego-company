@@ -1,0 +1,42 @@
+"use client";
+
+import { Reveal } from "@/components/ui/Reveal";
+
+export function Beliefs() {
+  return (
+    <section className="py-10 md:py-24 bg-white">
+      <div className="container-base">
+        <p className="flex items-center gap-3 text-[14px] md:text-[14px] font-semibold tracking-[0.22em] uppercase text-brand">
+          <span className="h-px w-8 bg-brand" />
+          Philosophy
+        </p>
+
+        <Reveal>
+          <h2 className="mt-3 md:mt-6 font-display font-bold text-[clamp(26px,5vw,64px)] leading-[1.1] tracking-[-0.02em]">
+            위고컴퍼니가
+            <br />
+            <span className="text-brand">믿는 것들</span>
+          </h2>
+        </Reveal>
+
+        <Reveal delay={0.15}>
+          <div className="mt-5 md:mt-20 rounded-[12px] md:rounded-[28px] bg-surface p-4 md:p-14 lg:p-16">
+            <p className="text-[16px] md:text-[24px] font-bold tracking-[-0.01em] text-foreground leading-[1.35]">
+              기술은 사람을 위해 존재해야 합니다.
+            </p>
+            <div className="mt-4 space-y-2 text-[14px] md:text-[16px] leading-[1.85] text-muted">
+              <p>
+                우리는 복잡한 기술을 드러내기보다, 자연스럽게 스며드는 경험을
+                만듭니다.
+              </p>
+              <p>
+                AI는 더 똑똑해지는 것이 아니라, 사람을 더 이해하는 방향으로
+                나아가야 한다고 믿습니다.
+              </p>
+            </div>
+          </div>
+        </Reveal>
+      </div>
+    </section>
+  );
+}
