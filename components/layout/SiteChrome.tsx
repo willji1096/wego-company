@@ -4,6 +4,7 @@ import { Header } from "./Header";
 import { Footer } from "./Footer";
 import { SmoothScroll } from "./SmoothScroll";
 import { ContactModal } from "@/components/contact/ContactModal";
+import { IRLoginModal } from "@/components/ir/IRLoginModal";
 import { useContactStore } from "@/lib/stores/contact";
 
 export function SiteChrome({ children }: { children: React.ReactNode }) {
@@ -15,6 +16,7 @@ export function SiteChrome({ children }: { children: React.ReactNode }) {
       <main className="flex-1">{children}</main>
       <Footer />
       <ContactModal />
+      <IRLoginModal />
     </>
   );
 }

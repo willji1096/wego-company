@@ -7,11 +7,13 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ArrowRight, ChevronDown, Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { NAV_ITEMS, BRAND } from "@/lib/data/nav";
+import { useIRAuthStore } from "@/lib/stores/irAuth";
 
 export function Header({ onContactClick }: { onContactClick?: () => void }) {
   const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const openIRAuth = useIRAuthStore((s) => s.setOpen);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 64);
@@ -50,17 +52,15 @@ export function Header({ onContactClick }: { onContactClick?: () => void }) {
               item.href === "/"
                 ? pathname === "/"
                 : pathname === item.href || pathname.startsWith(`${item.href}/`);
-            return (
-              <Link
-                key={item.href}
-                href={item.href}
-                className={cn(
-                  "relative inline-flex items-center gap-1 text-[14px] font-semibold tracking-[0.12em] transition-colors",
-                  onHero
-                    ? "text-white/90 hover:text-white"
-                    : "text-muted hover:text-foreground"
-                )}
-              >
+            const isIR = item.href === "/ir";
+            const linkClass = cn(
+              "relative inline-flex items-center gap-1 text-[14px] font-semibold tracking-[0.12em] transition-colors",
+              onHero
+                ? "text-white/90 hover:text-white"
+                : "text-muted hover:text-foreground"
+            );
+            const inner = (
+              <>
                 {item.label}
                 {item.hasSubmenu && (
                   <ChevronDown size={14} className="opacity-70" />
@@ -72,6 +72,21 @@ export function Header({ onContactClick }: { onContactClick?: () => void }) {
                     transition={{ type: "spring", stiffness: 380, damping: 30 }}
                   />
                 )}
+              </>
+            );
+
+            return isIR ? (
+              <button
+                key={item.href}
+                type="button"
+                onClick={() => openIRAuth(true)}
+                className={linkClass}
+              >
+                {inner}
+              </button>
+            ) : (
+              <Link key={item.href} href={item.href} className={linkClass}>
+                {inner}
               </Link>
             );
           })}
@@ -116,16 +131,30 @@ export function Header({ onContactClick }: { onContactClick?: () => void }) {
             className="md:hidden bg-white border-t border-border-soft"
           >
             <nav className="container-base flex flex-col py-6 gap-4">
-              {NAV_ITEMS.map((item) => (
-                <Link
-                  key={item.href}
-                  href={item.href}
-                  onClick={closeMobile}
-                  className="text-[16px] font-semibold tracking-[0.12em] py-2 text-foreground"
-                >
-                  {item.label}
-                </Link>
-              ))}
+              {NAV_ITEMS.map((item) =>
+                item.href === "/ir" ? (
+                  <button
+                    key={item.href}
+                    type="button"
+                    onClick={() => {
+                      closeMobile();
+                      openIRAuth(true);
+                    }}
+                    className="text-left text-[16px] font-semibold tracking-[0.12em] py-2 text-foreground"
+                  >
+                    {item.label}
+                  </button>
+                ) : (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    onClick={closeMobile}
+                    className="text-[16px] font-semibold tracking-[0.12em] py-2 text-foreground"
+                  >
+                    {item.label}
+                  </Link>
+                )
+              )}
               <button
                 type="button"
                 onClick={() => {
