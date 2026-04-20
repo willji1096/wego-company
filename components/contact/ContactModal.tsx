@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { ArrowRight, X, ChevronDown } from "lucide-react";
 import { useForm, useWatch } from "react-hook-form";
@@ -15,6 +15,7 @@ import { cn } from "@/lib/utils";
 
 export function ContactModal() {
   const { open, setOpen } = useContactStore();
+  const [consentOpen, setConsentOpen] = useState(false);
 
   const {
     register,
@@ -61,6 +62,7 @@ export function ContactModal() {
   };
 
   return (
+    <>
     <AnimatePresence>
       {open && (
         <motion.div
@@ -187,12 +189,16 @@ export function ContactModal() {
                   />
                   <span className="text-[14px] leading-[1.6] text-muted">
                     개인정보 수집 및 이용에 동의합니다.{" "}
-                    <a
-                      href="/privacy"
+                    <button
+                      type="button"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        setConsentOpen(true);
+                      }}
                       className="underline decoration-muted/50 underline-offset-2 hover:text-foreground"
                     >
                       내용보기
-                    </a>
+                    </button>
                   </span>
                 </label>
                 {errors.agreed && (
@@ -216,6 +222,123 @@ export function ContactModal() {
                 </button>
               </form>
             )}
+            </div>
+          </motion.div>
+        </motion.div>
+      )}
+    </AnimatePresence>
+
+    <PrivacyConsentModal
+      open={consentOpen}
+      onClose={() => setConsentOpen(false)}
+    />
+    </>
+  );
+}
+
+function PrivacyConsentModal({
+  open,
+  onClose,
+}: {
+  open: boolean;
+  onClose: () => void;
+}) {
+  return (
+    <AnimatePresence>
+      {open && (
+        <motion.div
+          className="fixed inset-0 z-[110] flex items-center justify-center p-3 md:p-8"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+        >
+          <motion.div
+            className="absolute inset-0 bg-black/50 backdrop-blur-md"
+            onClick={onClose}
+          />
+          <motion.div
+            initial={{ opacity: 0, y: 20, scale: 0.97 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            exit={{ opacity: 0, y: 20, scale: 0.97 }}
+            transition={{ duration: 0.3, ease: [0.19, 1, 0.22, 1] }}
+            className="relative w-full max-w-[560px] max-h-[92vh] overflow-hidden bg-white rounded-[18px] md:rounded-[24px] shadow-2xl flex flex-col"
+          >
+            <button
+              type="button"
+              onClick={onClose}
+              className="absolute top-4 right-4 z-10 flex h-9 w-9 items-center justify-center rounded-full bg-surface text-foreground hover:bg-[#e2e8f0] transition-colors"
+              aria-label="close"
+            >
+              <X size={16} />
+            </button>
+            <div
+              data-lenis-prevent
+              className="slim-scrollbar overflow-y-auto overscroll-contain px-6 md:px-8 pt-7 md:pt-9 pb-6"
+            >
+              <h3 className="text-[20px] md:text-[22px] font-bold tracking-[-0.02em] text-foreground pr-10">
+                개인정보 수집·이용 동의
+              </h3>
+
+              <div className="mt-5 md:mt-6 overflow-hidden rounded-[10px] border border-border-soft">
+                <table className="w-full text-left text-[13px] md:text-[14px]">
+                  <thead>
+                    <tr className="bg-surface text-foreground">
+                      <th className="px-3 md:px-4 py-2.5 md:py-3 font-semibold border-b border-border-soft">
+                        수집 항목
+                      </th>
+                      <th className="px-3 md:px-4 py-2.5 md:py-3 font-semibold border-b border-border-soft">
+                        수집 목적
+                      </th>
+                      <th className="px-3 md:px-4 py-2.5 md:py-3 font-semibold border-b border-border-soft">
+                        보유 기간
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody className="text-muted">
+                    <tr className="border-b border-border-soft">
+                      <td className="px-3 md:px-4 py-3 align-top">
+                        성명, 회사명, 연락처, 이메일
+                      </td>
+                      <td className="px-3 md:px-4 py-3 align-top">
+                        문의 접수 및 답변
+                      </td>
+                      <td className="px-3 md:px-4 py-3 align-top">
+                        처리 완료 후 3년
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="px-3 md:px-4 py-3 align-top">문의 내용</td>
+                      <td className="px-3 md:px-4 py-3 align-top">
+                        맞춤 상담 제공
+                      </td>
+                      <td className="px-3 md:px-4 py-3 align-top">
+                        처리 완료 후 3년
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div className="mt-5 md:mt-6 space-y-3 text-[13px] md:text-[14px] leading-[1.7] text-muted">
+                <p>
+                  위 개인정보 수집·이용에 동의하지 않을 권리가 있습니다. 다만,
+                  동의를 거부하실 경우 문의 서비스 제공이 제한될 수 있습니다.
+                </p>
+                <p>
+                  수집된 개인정보는 문의 처리 목적 이외에는 사용되지 않으며, 보유
+                  기간 경과 후 지체 없이 파기됩니다.
+                </p>
+              </div>
+            </div>
+
+            <div className="px-6 md:px-8 pt-3 pb-5 md:pb-6 border-t border-border-soft">
+              <button
+                type="button"
+                onClick={onClose}
+                className="w-full h-12 md:h-14 rounded-full bg-brand text-white text-[15px] md:text-[16px] font-bold tracking-[-0.01em] hover:bg-brand-hover transition-colors"
+              >
+                확인
+              </button>
             </div>
           </motion.div>
         </motion.div>
