@@ -13,11 +13,6 @@ export function SmoothScroll() {
       touchMultiplier: 1.4,
     });
 
-    // dispatch scroll events for IntersectionObserver / Framer Motion useInView
-    lenis.on("scroll", () => {
-      window.dispatchEvent(new Event("scroll"));
-    });
-
     let rafId: number;
     function raf(time: number) {
       lenis.raf(time);
