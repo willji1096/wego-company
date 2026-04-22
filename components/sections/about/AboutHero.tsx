@@ -24,9 +24,9 @@ export function AboutHero() {
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="flex items-center gap-3 text-[14px] md:text-[14px] font-semibold tracking-[3px] uppercase text-brand"
+          className="flex items-center gap-3 text-[14px] md:text-[14px] font-semibold tracking-[3px] uppercase text-[color:var(--brand-eyebrow)]"
         >
-          <span className="h-px w-8 bg-brand" />
+          <span className="h-px w-8 bg-[color:var(--brand-eyebrow)]" />
           Company Overview
         </motion.p>
 
