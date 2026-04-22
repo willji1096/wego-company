@@ -282,9 +282,9 @@ function PrivacyConsentModal({
               <div className="mt-5 md:mt-6 overflow-hidden rounded-[10px] border border-border-soft">
                 <table className="w-full text-left text-[13px] md:text-[14px] table-fixed">
                   <colgroup>
-                    <col className="w-[44%]" />
-                    <col className="w-[30%]" />
-                    <col className="w-[26%]" />
+                    <col className="w-[50%]" />
+                    <col className="w-[28%]" />
+                    <col className="w-[22%]" />
                   </colgroup>
                   <thead>
                     <tr className="bg-surface text-foreground">

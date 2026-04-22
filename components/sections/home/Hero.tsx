@@ -38,7 +38,7 @@ function ScrambleText({
 }) {
   const [out, setOut] = useState(text);
   const rafRef = useRef(0);
-  const shouldReduce = useReducedMotion();
+  const shouldReduce = useReducedMotion() === true;
 
   useEffect(() => {
     if (shouldReduce) {
@@ -283,7 +283,7 @@ function NewHero() {
             <p className="text-[14px] md:text-[20px] leading-[1.55] md:leading-[1.625]">
               기술을 설계하는 팀, 산업의 미래를 디자인합니다.
             </p>
-            <p className="text-[12px] md:text-[16px] leading-[1.5] text-white/70">
+            <p className="text-[12px] md:text-[16px] leading-[1.5] text-white/90">
               AI와 블록체인의 융합으로 새로운 가치를 창출합니다.
             </p>
           </motion.div>

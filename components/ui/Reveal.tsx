@@ -16,7 +16,7 @@ export function Reveal({
   y = 24,
   className,
 }: RevealProps) {
-  const shouldReduce = useReducedMotion();
+  const shouldReduce = useReducedMotion() === true;
   return (
     <motion.div
       initial={shouldReduce ? false : { opacity: 0, y }}
