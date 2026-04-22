@@ -19,7 +19,10 @@ export const BRAND = {
 };
 
 export const COMPANY_INFO = {
-  address: "서울시 서초구 바우뫼로27길 7-31, 예원빌딩 3F",
+  entity: "(주)위고컴퍼니",
+  ceo: "김영기",
+  region: "경기도 화성",
+  address: "경기도 화성",
   tel: "02-3288-3455",
   fax: "02-3288-3454",
   email: "wego@wegocompany.net",
@@ -32,6 +35,6 @@ export const BUSINESS_LINKS = [
 ];
 
 export const LEGAL_LINKS = [
-  { label: "Privacy Policy", href: "/privacy" },
-  { label: "Terms of Service", href: "/terms" },
+  { label: "개인정보처리방침", href: "/privacy" },
+  { label: "이용약관", href: "/terms" },
 ];

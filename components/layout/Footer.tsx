@@ -21,16 +21,22 @@ export function Footer() {
               </span>
             </Link>
             <ul className="mt-3 md:mt-8 space-y-1 md:space-y-2 text-[12px] md:text-[14px] text-white/70 leading-[1.7]">
-              <li>{COMPANY_INFO.address}</li>
               <li>
+                {COMPANY_INFO.entity}
+                <span className="mx-1.5 text-white/50">·</span>
+                대표이사 {COMPANY_INFO.ceo}
+                <span className="mx-1.5 text-white/50">·</span>
+                {COMPANY_INFO.region}
+              </li>
+              <li>
+                Tel. {COMPANY_INFO.tel}
+                <span className="mx-1.5 text-white/50">·</span>
                 <a
                   href={`mailto:${COMPANY_INFO.email}`}
                   className="hover:text-white transition-colors"
                 >
                   {COMPANY_INFO.email}
                 </a>
-                <span className="mx-1.5 text-white/50">·</span>
-                TEL. {COMPANY_INFO.tel}
               </li>
             </ul>
           </div>
@@ -43,10 +49,25 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-7 md:mt-16 pt-5 md:pt-8 border-t border-ink-line">
-          <p className="text-[12px] md:text-[12px] tracking-[0.12em] uppercase text-white/50">
-            © {new Date().getFullYear()} WEGO COMPANY. ALL RIGHTS RESERVED.
+        <div className="mt-7 md:mt-16 pt-5 md:pt-8 border-t border-ink-line flex flex-col md:flex-row md:items-center md:justify-between gap-3">
+          <p className="text-[12px] tracking-[0.04em] text-white/50">
+            © 2026 WeGo Company Inc. All rights reserved.
           </p>
+          <ul className="flex items-center gap-3 text-[12px] text-white/70">
+            {LEGAL_LINKS.map((link, i) => (
+              <li key={link.href} className="flex items-center gap-3">
+                <Link
+                  href={link.href}
+                  className="hover:text-white transition-colors"
+                >
+                  {link.label}
+                </Link>
+                {i < LEGAL_LINKS.length - 1 && (
+                  <span className="text-white/30">|</span>
+                )}
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </footer>
