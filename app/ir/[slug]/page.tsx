@@ -72,7 +72,7 @@ export default async function IRDetailPage({
           </Link>
           <div className="mt-5 md:mt-14 max-w-4xl">
             <div className="flex items-center gap-3 mb-5 md:mb-6">
-              <span className="inline-flex h-7 items-center px-3 rounded-full bg-white/20 backdrop-blur text-white text-[12px] md:text-[12px] font-bold tracking-[1px]">
+              <span className="inline-flex h-7 shrink-0 items-center px-3 rounded-full bg-white/20 backdrop-blur text-white text-[12px] md:text-[12px] font-bold tracking-[1px]">
                 {item.category}
               </span>
               <time className="text-[14px] md:text-[14px] text-white/70 tabular-nums">
@@ -82,15 +82,15 @@ export default async function IRDetailPage({
             <h1 className="font-display font-bold text-[24px] md:text-[32px] lg:text-[36px] xl:text-[42px] leading-[1.25] tracking-[-1px]">
               {item.title}
             </h1>
-            {dday !== null && dday > 0 && (
-              <span className="mt-4 inline-flex h-8 items-center px-3 rounded-full bg-white text-brand text-[14px] font-bold tracking-normal">
-                D-{dday}
-              </span>
-            )}
             {item.sections?.tagline && (
-              <p className="mt-5 text-[14px] md:text-[16px] text-white/70 leading-[1.6]">
+              <p className="mt-4 text-[14px] md:text-[16px] text-white/70 leading-[1.6]">
                 {item.sections.tagline}
               </p>
+            )}
+            {dday !== null && dday > 0 && (
+              <span className="mt-5 inline-flex h-8 items-center px-3 rounded-full bg-white text-brand text-[14px] font-bold tracking-normal">
+                D-{dday}
+              </span>
             )}
           </div>
         </div>
@@ -113,8 +113,8 @@ export default async function IRDetailPage({
                           key={row.label}
                           className="grid grid-cols-[110px_1fr] md:grid-cols-[140px_1fr] gap-4 text-[14px] md:text-[16px]"
                         >
-                          <dt className="text-muted">{row.label}</dt>
-                          <dd className="text-foreground">{row.value}</dd>
+                          <dt className="text-muted break-keep">{row.label}</dt>
+                          <dd className="text-foreground break-keep">{row.value}</dd>
                         </div>
                       ))}
                     </dl>
@@ -127,26 +127,32 @@ export default async function IRDetailPage({
                   <h2 className="inline-block border-b-[3px] border-brand pb-1.5 text-[18px] md:text-[20px] font-bold leading-[1.3] mb-8">
                     채용 절차
                   </h2>
-                  <div className="grid grid-cols-1 sm:grid-cols-5 gap-5">
+                  <div className="grid grid-cols-1 sm:grid-cols-5 gap-0 sm:gap-5">
                     {item.sections.process.map((step, i) => (
-                      <div
-                        key={step.step}
-                        className="relative flex flex-col items-center text-center"
-                      >
-                        <span className="flex h-12 w-12 items-center justify-center rounded-full bg-brand-soft text-brand font-bold text-[16px]">
-                          {step.step}
-                        </span>
-                        <p className="mt-4 text-[14px] md:text-[16px] font-bold text-foreground">
-                          {step.title}
-                        </p>
-                        <p className="mt-1.5 text-[12px] md:text-[14px] text-muted leading-[1.5]">
-                          {step.desc}
-                        </p>
+                      <div key={step.step} className="relative">
+                        <div className="flex sm:flex-col items-center gap-4 sm:gap-0 text-left sm:text-center">
+                          <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-brand-soft text-brand font-bold text-[16px]">
+                            {step.step}
+                          </span>
+                          <div>
+                            <p className="sm:mt-4 text-[14px] md:text-[16px] font-bold text-foreground">
+                              {step.title}
+                            </p>
+                            <p className="mt-1 text-[12px] md:text-[14px] text-muted leading-[1.5]">
+                              {step.desc}
+                            </p>
+                          </div>
+                        </div>
                         {i < item.sections!.process!.length - 1 && (
-                          <ArrowRight
-                            size={16}
-                            className="hidden sm:block absolute right-0 top-3 translate-x-1/2 text-muted/40"
-                          />
+                          <>
+                            <div className="sm:hidden flex justify-start ml-[22px] my-2">
+                              <div className="w-px h-4 bg-border" />
+                            </div>
+                            <ArrowRight
+                              size={16}
+                              className="hidden sm:block absolute right-0 top-3 translate-x-1/2 text-muted/40"
+                            />
+                          </>
                         )}
                       </div>
                     ))}
@@ -181,11 +187,11 @@ export default async function IRDetailPage({
               )}
 
               {item.sections.benefits && (
-                <section>
+                <section className="mb-10 md:mb-16">
                   <h2 className="inline-block border-b-[3px] border-brand pb-1.5 text-[18px] md:text-[20px] font-bold leading-[1.3] mb-6">
                     복지 및 혜택
                   </h2>
-                  <ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                  <ul className="grid gap-3 grid-cols-2 lg:grid-cols-3">
                     {item.sections.benefits.map((b) => (
                       <li
                         key={b}
