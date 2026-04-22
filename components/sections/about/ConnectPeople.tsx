@@ -38,14 +38,14 @@ export function ConnectPeople() {
           Vision
         </p>
         <Reveal>
-          <h2 className="mt-3 md:mt-6 font-display font-bold text-[26px] md:text-[40px] leading-[1.1] tracking-[-1px]">
+ <h2 className="mt-3 md:mt-6 font-display font-bold text-[26px] md:text-[40px] leading-[29px] md:leading-[44px] tracking-[-1px]">
             AI로 사람과 세상을
             <br />
             <span className="text-brand">연결합니다.</span>
           </h2>
         </Reveal>
         <Reveal delay={0.12}>
-          <p className="mt-6 text-[16px] md:text-[16px] leading-[1.75] text-muted max-w-xl">
+ <p className="mt-6 text-[16px] md:text-[16px] leading-[28px] text-muted max-w-xl">
             아이의 일상에서, 산업의 현장에서, 그리고 보이지 않는 신뢰의 영역까지
             <br className="hidden md:block" /> 우리는 기술을 통해 더 나은 연결을
             만듭니다.
@@ -63,10 +63,10 @@ export function ConnectPeople() {
                 <span className="flex h-12 w-12 items-center justify-center rounded-[12px] bg-brand-soft text-brand">
                   <p.Icon size={22} strokeWidth={1.8} />
                 </span>
-                <h3 className="mt-4 md:mt-7 text-[18px] md:text-[22px] font-bold tracking-normal text-foreground leading-[1.25]">
+ <h3 className="mt-4 md:mt-7 text-[18px] md:text-[22px] font-bold tracking-normal text-foreground leading-[22px] md:leading-[28px]">
                   {p.title}
                 </h3>
-                <p className="mt-3 text-[14px] md:text-[14px] leading-[1.7] text-muted">
+ <p className="mt-3 text-[14px] md:text-[14px] leading-[24px] text-muted">
                   {p.desc}
                 </p>
               </motion.div>

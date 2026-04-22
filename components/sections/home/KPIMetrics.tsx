@@ -22,14 +22,14 @@ export function KPIMetrics() {
                 Performance
               </p>
               <Reveal>
-                <h2 className="mt-3 md:mt-6 font-display font-bold text-[26px] md:text-[40px] leading-[1.1] tracking-[-1px]">
+ <h2 className="mt-3 md:mt-6 font-display font-bold text-[26px] md:text-[40px] leading-[29px] md:leading-[44px] tracking-[-1px]">
                   Key Metrics
                 </h2>
               </Reveal>
             </div>
             <div className="hidden md:block h-px bg-muted/30 self-end mb-3" />
             <Reveal delay={0.12}>
-              <p className="text-[14px] md:text-[16px] leading-[1.7] text-muted md:text-right md:max-w-[240px]">
+ <p className="text-[14px] md:text-[16px] leading-[24px] md:leading-[27px] text-muted md:text-right md:max-w-[240px]">
                 데이터로 증명하는 위고컴퍼니의
                 <br className="hidden md:block" /> 압도적인 기술 퍼포먼스
               </p>
@@ -51,7 +51,7 @@ export function KPIMetrics() {
                   <p className="mt-3 md:mt-5 text-[16px] md:text-[20px] font-bold tracking-normal text-foreground">
                     {m.label}
                   </p>
-                  <p className="mt-2 text-[12px] md:text-[14px] text-muted leading-[1.6]">
+ <p className="mt-2 text-[12px] md:text-[14px] text-muted leading-[19px] md:leading-[22px]">
                     {m.desc}
                   </p>
                 </div>

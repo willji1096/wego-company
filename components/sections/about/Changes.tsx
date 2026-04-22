@@ -35,14 +35,14 @@ export function Changes() {
           Goal
         </p>
         <Reveal>
-          <h2 className="mt-3 md:mt-6 font-display font-bold text-[26px] md:text-[40px] leading-[1.1] tracking-[-1px]">
+ <h2 className="mt-3 md:mt-6 font-display font-bold text-[26px] md:text-[40px] leading-[29px] md:leading-[44px] tracking-[-1px]">
             우리가 만들어갈
             <br />
             <span className="text-brand">변화</span>
           </h2>
         </Reveal>
         <Reveal delay={0.12}>
-          <p className="mt-6 text-[14px] md:text-[16px] text-muted leading-[1.7]">
+ <p className="mt-6 text-[14px] md:text-[16px] text-muted leading-[24px] md:leading-[27px]">
             우리의 목표는 기술을 만드는 것이 아니라{" "}
             <b className="text-foreground">변화를 만드는</b> 것입니다.
           </p>
@@ -56,10 +56,10 @@ export function Changes() {
                   {c.num}
                 </span>
                 <div>
-                  <h3 className="text-[18px] md:text-[22px] font-bold tracking-normal text-foreground leading-[1.25]">
+ <h3 className="text-[18px] md:text-[22px] font-bold tracking-normal text-foreground leading-[22px] md:leading-[28px]">
                     {c.title}
                   </h3>
-                  <p className="mt-2 text-[14px] md:text-[14px] leading-[1.7] text-muted">
+ <p className="mt-2 text-[14px] md:text-[14px] leading-[24px] text-muted">
                     {c.desc}
                   </p>
                 </div>

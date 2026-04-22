@@ -26,14 +26,14 @@ export function ContactCTA() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-80px" }}
               transition={{ duration: 0.9, ease: [0.19, 1, 0.22, 1] }}
-              className="font-display font-bold text-[26px] md:text-[40px] leading-[1.15] tracking-[-1px] text-balance"
+ className="font-display font-bold text-[26px] md:text-[40px] leading-[30px] md:leading-[46px] tracking-[-1px] text-balance"
             >
               AI와 보안 기술로
               <br />
               함께 성장할 준비가 되셨나요?
             </motion.h2>
 
-            <p className="mt-3 md:mt-8 text-[14px] md:text-[16px] leading-[1.75] text-white/70 max-w-2xl">
+ <p className="mt-3 md:mt-8 text-[14px] md:text-[16px] leading-[24px] md:leading-[28px] text-white/70 max-w-2xl">
               위고컴퍼니의 혁신적인 기술과 함께 새로운 비즈니스를 시작해보세요.
               <br className="hidden md:block" />
               파트너십 · 투자 · 제품 문의 모두 환영합니다.

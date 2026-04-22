@@ -47,7 +47,7 @@ export function TechIntro() {
               Who We Are
             </p>
             <Reveal>
-              <h2 className="mt-3 md:mt-6 font-display font-bold text-[26px] md:text-[40px] leading-[1.1] tracking-[-1px] text-foreground">
+ <h2 className="mt-3 md:mt-6 font-display font-bold text-[26px] md:text-[40px] leading-[29px] md:leading-[44px] tracking-[-1px] text-foreground">
                 기술로 산업의 미래를
                 <br />
                 디자인합니다
@@ -55,7 +55,7 @@ export function TechIntro() {
             </Reveal>
           </div>
           <Reveal delay={0.12}>
-            <p className="md:pt-12 text-[16px] md:text-[16px] leading-[1.75] text-muted md:justify-self-end md:max-w-[420px]">
+ <p className="md:pt-12 text-[16px] md:text-[16px] leading-[28px] text-muted md:justify-self-end md:max-w-[420px]">
               위고컴퍼니는{" "}
               <span className="text-brand underline decoration-brand/40 underline-offset-[6px]">
                 AI와 보안 기술의 융합
@@ -92,14 +92,14 @@ export function TechIntro() {
 
                 {/* title + accent bar */}
                 <div className="relative mt-4 md:mt-12">
-                  <h3 className="text-[18px] md:text-[22px] font-bold tracking-[-1px] leading-[1.2]">
+ <h3 className="text-[18px] md:text-[22px] font-bold tracking-[-1px] leading-[22px] md:leading-[26px]">
                     {c.title}
                   </h3>
                   <div className="mt-4 h-[2px] w-10 bg-brand" />
                 </div>
 
                 {/* body */}
-                <p className="relative mt-4 md:mt-6 text-[16px] md:text-[18px] leading-[1.7] text-white/70 flex-1">
+ <p className="relative mt-4 md:mt-6 text-[16px] md:text-[18px] leading-[27px] md:leading-[31px] text-white/70 flex-1">
                   {c.desc}
                 </p>
 

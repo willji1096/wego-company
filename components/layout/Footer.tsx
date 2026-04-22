@@ -20,7 +20,7 @@ export function Footer() {
                 {BRAND.name}
               </span>
             </Link>
-            <ul className="mt-3 md:mt-8 space-y-1 md:space-y-2 text-[12px] md:text-[14px] text-white/70 leading-[1.7]">
+ <ul className="mt-3 md:mt-8 space-y-1 md:space-y-2 text-[12px] md:text-[14px] text-white/70 leading-[20px] md:leading-[24px]">
               <li>
                 {COMPANY_INFO.entity}
                 <span className="mx-1.5 text-white/50">·</span>

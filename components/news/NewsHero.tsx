@@ -57,7 +57,7 @@ export function NewsHero({
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, ease: [0.19, 1, 0.22, 1] }}
-          className="mt-6 md:mt-8 font-display font-bold text-[28px] md:text-[40px] leading-[1.05] tracking-[-2px]"
+ className="mt-6 md:mt-8 font-display font-bold text-[28px] md:text-[40px] leading-[29px] md:leading-[42px] tracking-[-2px]"
         >
           {title}
         </motion.h1>
@@ -67,7 +67,7 @@ export function NewsHero({
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className={`mt-8 text-[14px] md:text-[16px] leading-[1.7] max-w-2xl text-balance ${
+ className={`mt-8 text-[14px] md:text-[16px] leading-[24px] md:leading-[27px] max-w-2xl text-balance ${
               isDark ? "text-white/70" : "text-muted"
             }`}
           >

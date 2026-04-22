@@ -95,10 +95,10 @@ export function ContactModal() {
               className="slim-scrollbar overflow-y-auto overscroll-contain p-5 md:p-12"
             >
             <div className="mb-5 md:mb-10 pr-10 md:pr-0">
-              <h2 className="text-[22px] md:text-[32px] font-bold tracking-[-1px] leading-[1.2]">
+ <h2 className="text-[22px] md:text-[32px] font-bold tracking-[-1px] leading-[26px] md:leading-[38px]">
                 문의
               </h2>
-              <p className="mt-2 md:mt-3 text-[13px] md:text-[14px] text-muted leading-[1.6]">
+ <p className="mt-2 md:mt-3 text-[13px] md:text-[14px] text-muted leading-[21px] md:leading-[22px]">
                 위고컴퍼니와 함께 혁신적인 미래를 만들어갈 파트너를 기다립니다.
               </p>
             </div>
@@ -108,7 +108,7 @@ export function ContactModal() {
                 <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-brand text-white text-2xl mb-5">
                   ✓
                 </div>
-                <h3 className="text-xl font-bold leading-[1.25] mb-2">문의가 접수되었습니다</h3>
+                <h3 className="text-[20px] font-bold leading-[25px] mb-2">문의가 접수되었습니다</h3>
                 <p className="text-[14px] text-muted">
                   영업일 기준 2~3일 내 회신드리겠습니다.
                 </p>
@@ -177,7 +177,7 @@ export function ContactModal() {
                     {...register("content")}
                     rows={4}
                     placeholder="상세한 문의 내용을 입력해주세요. 확인 후 담당자가 연락드리겠습니다."
-                    className="w-full rounded-[10px] border border-border bg-white px-3.5 md:px-4 py-3 text-[14px] leading-[1.6] focus:border-brand focus:outline-none transition resize-none"
+ className="w-full rounded-[10px] border border-border bg-white px-3.5 md:px-4 py-3 text-[14px] leading-[22px] focus:border-brand focus:outline-none transition resize-none"
                   />
                 </Field>
 
@@ -187,7 +187,7 @@ export function ContactModal() {
                     {...register("agreed")}
                     className="mt-[3px] h-4 w-4 accent-brand"
                   />
-                  <span className="text-[14px] leading-[1.6] text-muted">
+ <span className="text-[14px] leading-[22px] text-muted">
                     개인정보 수집 및 이용에 동의합니다.{" "}
                     <button
                       type="button"
@@ -275,7 +275,7 @@ function PrivacyConsentModal({
               data-lenis-prevent
               className="slim-scrollbar overflow-y-auto overscroll-contain px-6 md:px-8 pt-7 md:pt-9 pb-6"
             >
-              <h3 className="text-[20px] md:text-[22px] font-bold tracking-[-1px] text-foreground leading-[1.25] pr-10">
+ <h3 className="text-[20px] md:text-[22px] font-bold tracking-[-1px] text-foreground leading-[25px] md:leading-[28px] pr-10">
                 개인정보 수집·이용 동의
               </h3>
 
@@ -324,7 +324,7 @@ function PrivacyConsentModal({
                 </table>
               </div>
 
-              <div className="mt-5 md:mt-6 space-y-3 text-[13px] md:text-[14px] leading-[1.7] text-muted">
+ <div className="mt-5 md:mt-6 space-y-3 text-[13px] md:text-[14px] leading-[22px] md:leading-[24px] text-muted">
                 <p>
                   위 개인정보 수집·이용에 동의하지 않을 권리가 있습니다. 다만,
                   동의를 거부하실 경우 문의 서비스 제공이 제한될 수 있습니다.

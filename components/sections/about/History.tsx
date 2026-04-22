@@ -66,14 +66,14 @@ export function History() {
           Company History
         </p>
         <Reveal>
-          <h2 className="mt-3 md:mt-6 font-display font-bold text-[26px] md:text-[40px] leading-[1.1] tracking-[-1px]">
+ <h2 className="mt-3 md:mt-6 font-display font-bold text-[26px] md:text-[40px] leading-[29px] md:leading-[44px] tracking-[-1px]">
             우리가 걸어온
             <br />
             <span className="text-brand">주요 발자취</span>
           </h2>
         </Reveal>
         <Reveal delay={0.12}>
-          <p className="mt-6 text-[14px] md:text-[16px] text-muted leading-[1.7]">
+ <p className="mt-6 text-[14px] md:text-[16px] text-muted leading-[24px] md:leading-[27px]">
             2018년 설립부터 현재까지, 위고컴퍼니의 도전과 성장의 핵심 순간들입니다.
           </p>
         </Reveal>
@@ -101,14 +101,14 @@ export function History() {
                   <p className="text-[16px] md:text-[16px] font-semibold text-brand">
                     {ch.period}
                   </p>
-                  <h3 className="mt-3 font-display font-bold text-[18px] md:text-[22px] leading-[1.25] tracking-normal text-foreground">
+ <h3 className="mt-3 font-display font-bold text-[18px] md:text-[22px] leading-[22px] md:leading-[28px] tracking-normal text-foreground">
                     {ch.title}
                   </h3>
                   <ul className="mt-3 md:mt-5 space-y-2 md:space-y-2.5">
                     {ch.events.map((e) => (
                       <li
                         key={e}
-                        className="flex gap-2 text-[14px] md:text-[14px] leading-[1.65] text-muted"
+ className="flex gap-2 text-[14px] md:text-[14px] leading-[23px] text-muted"
                       >
                         <span className="mt-[8px] h-[3px] w-[3px] rounded-full bg-muted shrink-0" />
                         <span>{e}</span>

@@ -32,11 +32,11 @@ export default function NotFound() {
           404
         </h1>
 
-        <p className="mt-6 md:mt-8 text-[20px] md:text-[28px] font-semibold leading-[1.25] tracking-[-1px]">
+ <p className="mt-6 md:mt-8 text-[20px] md:text-[28px] font-semibold leading-[25px] md:leading-[35px] tracking-[-1px]">
           페이지를 찾을 수 없습니다.
         </p>
 
-        <p className="mt-4 text-[14px] md:text-[16px] leading-[1.7] text-white/70 max-w-xl">
+ <p className="mt-4 text-[14px] md:text-[16px] leading-[24px] md:leading-[27px] text-white/70 max-w-xl">
           요청하신 페이지가 이동되었거나 삭제되었을 수 있습니다.
           <br />
           주소를 다시 확인해 주세요.

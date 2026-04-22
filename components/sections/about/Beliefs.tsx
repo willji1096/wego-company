@@ -12,7 +12,7 @@ export function Beliefs() {
         </p>
 
         <Reveal>
-          <h2 className="mt-3 md:mt-6 font-display font-bold text-[26px] md:text-[40px] leading-[1.1] tracking-[-1px]">
+ <h2 className="mt-3 md:mt-6 font-display font-bold text-[26px] md:text-[40px] leading-[29px] md:leading-[44px] tracking-[-1px]">
             위고컴퍼니가
             <br />
             <span className="text-brand">믿는 것들</span>
@@ -21,10 +21,10 @@ export function Beliefs() {
 
         <Reveal delay={0.15}>
           <div className="mt-6 md:mt-16 rounded-[12px] md:rounded-[28px] bg-surface p-6 md:p-14 lg:p-16">
-            <p className="text-[16px] md:text-[24px] font-bold tracking-normal text-foreground leading-[1.6]">
+ <p className="text-[16px] md:text-[24px] font-bold tracking-normal text-foreground leading-[26px] md:leading-[38px]">
               기술은 사람을 위해 존재해야 합니다.
             </p>
-            <div className="mt-4 space-y-2 text-[14px] md:text-[16px] leading-[1.75] text-muted">
+ <div className="mt-4 space-y-2 text-[14px] md:text-[16px] leading-[24px] md:leading-[28px] text-muted">
               <p>
                 우리는 복잡한 기술을 드러내기보다, 자연스럽게 스며드는 경험을
                 만듭니다.

@@ -80,7 +80,7 @@ export function BusinessPortfolio() {
               Our Works
             </p>
             <Reveal>
-              <h2 className="mt-3 md:mt-6 font-display font-bold text-[26px] md:text-[40px] leading-[1.05] tracking-[-1px]">
+ <h2 className="mt-3 md:mt-6 font-display font-bold text-[26px] md:text-[40px] leading-[27px] md:leading-[42px] tracking-[-1px]">
                 Business
                 <br />
                 Portfolio.
@@ -135,14 +135,14 @@ export function BusinessPortfolio() {
                     />
                   </span>
 
-                  <h3 className="text-[18px] md:text-[22px] font-bold tracking-normal text-foreground leading-[1.3]">
+ <h3 className="text-[18px] md:text-[22px] font-bold tracking-normal text-foreground leading-[23px] md:leading-[29px]">
                     {b.name} · {b.korean}
                   </h3>
-                  <p className="mt-2 text-[16px] md:text-[16px] leading-[1.55] text-muted-soft">
+ <p className="mt-2 text-[16px] md:text-[16px] leading-[25px] text-muted-soft">
                     {b.tagline}
                   </p>
 
-                  <p className="mt-3 md:mt-5 text-[16px] md:text-[16px] leading-[1.6] text-muted">
+ <p className="mt-3 md:mt-5 text-[16px] md:text-[16px] leading-[26px] text-muted">
                     {b.desc}
                   </p>
 
@@ -150,7 +150,7 @@ export function BusinessPortfolio() {
                     {b.bullets.map((t) => (
                       <li
                         key={t}
-                        className="flex items-start gap-2 text-[14px] md:text-[14px] leading-[1.65] text-muted"
+ className="flex items-start gap-2 text-[14px] md:text-[14px] leading-[23px] text-muted"
                       >
                         <Check
                           size={14}

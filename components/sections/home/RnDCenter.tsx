@@ -64,13 +64,13 @@ export function RnDCenter() {
                   R&amp;D CENTER
                 </span>
                 <Reveal>
-                  <h2 className="mt-3 md:mt-6 font-display font-bold text-[26px] md:text-[40px] leading-[1.1] tracking-[-1px]">
+ <h2 className="mt-3 md:mt-6 font-display font-bold text-[26px] md:text-[40px] leading-[29px] md:leading-[44px] tracking-[-1px]">
                     함께 성장할
                     <br />
                     파트너를 찾습니다.
                   </h2>
                 </Reveal>
-                <p className="mt-6 text-[14px] md:text-[16px] leading-[1.75] text-white/70 max-w-md">
+ <p className="mt-6 text-[14px] md:text-[16px] leading-[24px] md:leading-[28px] text-white/70 max-w-md">
                   위고컴퍼니는 교육·통신·보안·투자 각 분야의 파트너와 함께 AI
                   기술의 가치를 더 넓은 시장으로 확장해 나갑니다.
                 </p>
@@ -95,10 +95,10 @@ export function RnDCenter() {
                       <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-white/10">
                         <c.Icon size={22} className="text-white" />
                       </span>
-                      <h3 className="mt-3 md:mt-5 text-[18px] md:text-[22px] font-bold tracking-normal leading-[1.25]">
+ <h3 className="mt-3 md:mt-5 text-[18px] md:text-[22px] font-bold tracking-normal leading-[22px] md:leading-[28px]">
                         {c.title}
                       </h3>
-                      <p className="mt-3 text-[14px] md:text-[14px] leading-[1.65] text-white/70">
+ <p className="mt-3 text-[14px] md:text-[14px] leading-[23px] text-white/70">
                         {c.desc}
                       </p>
                     </div>

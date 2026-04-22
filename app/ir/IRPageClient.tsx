@@ -72,7 +72,7 @@ export function IRPageClient() {
                       </time>
                     </div>
                     <div className="flex-1 min-w-0">
-                      <h3 className="text-[15px] md:text-[16px] font-semibold tracking-normal leading-[1.4] line-clamp-2 md:line-clamp-1 group-hover:text-brand transition-colors">
+ <h3 className="text-[15px] md:text-[16px] font-semibold tracking-normal leading-[21px] md:leading-[22px] line-clamp-2 md:line-clamp-1 group-hover:text-brand transition-colors">
                         {item.title}
                       </h3>
                     </div>

@@ -34,10 +34,10 @@ export function LegalArticle({
 }) {
   return (
     <article className="space-y-4">
-      <h2 className="text-[18px] md:text-[22px] font-semibold tracking-normal text-ink leading-[1.3]">
+ <h2 className="text-[18px] md:text-[22px] font-semibold tracking-normal text-ink leading-[23px] md:leading-[29px]">
         {title}
       </h2>
-      <div className="text-[14px] md:text-[15px] text-muted leading-[1.8] space-y-3">
+ <div className="text-[14px] md:text-[15px] text-muted leading-[25px] md:leading-[27px] space-y-3">
         {children}
       </div>
     </article>

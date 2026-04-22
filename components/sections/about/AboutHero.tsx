@@ -30,7 +30,7 @@ export function AboutHero() {
           Company Overview
         </motion.p>
 
-        <h1 className="mt-8 font-display font-medium leading-[1.05] tracking-[-2px] text-[40px] md:text-[72px]">
+ <h1 className="mt-8 font-display font-medium leading-[42px] md:leading-[76px] tracking-[-2px] text-[40px] md:text-[72px]">
           <span className="block overflow-hidden pb-[0.08em]">
             <motion.span
               initial={{ y: "110%" }}
@@ -57,7 +57,7 @@ export function AboutHero() {
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.55 }}
-          className="mt-6 md:mt-10 text-[16px] md:text-[18px] leading-[1.8] text-white/70 max-w-xl"
+ className="mt-6 md:mt-10 text-[16px] md:text-[18px] leading-[29px] md:leading-[32px] text-white/70 max-w-xl"
         >
           AI와 보안 기술로 산업의 미래를 디자인합니다.
           <br />

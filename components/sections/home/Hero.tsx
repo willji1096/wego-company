@@ -174,7 +174,7 @@ function OldHero() {
           <div className="mb-8 text-[#9aceff] font-medium tracking-wide text-lg uppercase">
             We Design Technology
           </div>
-          <h1 className="text-5xl md:text-7xl lg:text-[6rem] font-medium leading-[0.95] tracking-tight mb-10">
+          <h1 className="text-[40px] md:text-[72px] font-medium leading-[42px] md:leading-[72px] tracking-tight mb-10">
             We Design <br />
             Technology.
           </h1>
@@ -255,7 +255,7 @@ function NewHero() {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="text-[12px] md:text-[18px] leading-[1.55] font-medium tracking-[2px] md:tracking-[2px] uppercase text-[color:var(--brand-eyebrow)]"
+ className="text-[12px] md:text-[18px] leading-[19px] md:leading-[28px] font-medium tracking-[2px] md:tracking-[2px] uppercase text-[color:var(--brand-eyebrow)]"
           >
             We Design Technology
           </motion.p>
