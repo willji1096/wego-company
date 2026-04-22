@@ -12,7 +12,7 @@ const METRICS = [
 
 export function KPIMetrics() {
   return (
-    <section className="relative py-10 md:py-20 bg-white">
+    <section className="relative py-8 md:py-20 bg-white">
       <div className="container-base">
         <div className="relative rounded-[12px] md:rounded-[32px] bg-surface px-4 py-5 md:px-16 md:py-16 lg:px-20">
           {/* Header row */}
@@ -37,7 +37,7 @@ export function KPIMetrics() {
           </div>
 
           {/* 4-metric row */}
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12 md:gap-x-12">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-8 md:gap-x-12 md:gap-y-12">
             {METRICS.map((m, i) => (
               <Reveal key={i} delay={i * 0.08}>
                 <div>

@@ -52,11 +52,11 @@ export function Changes() {
           {CHANGES.map((c, i) => (
             <Reveal key={c.num} delay={i * 0.08}>
               <div className="grid gap-4 md:grid-cols-[80px_minmax(0,1fr)_auto] md:gap-8 items-start md:items-center py-6 md:py-10 border-b border-border-soft">
-                <span className="font-display font-bold text-[40px] md:text-[48px] leading-none text-slate-300">
+                <span className="font-display font-bold text-[40px] md:text-[48px] leading-none text-muted/40">
                   {c.num}
                 </span>
                 <div>
-                  <h3 className="text-[14px] md:text-[18px] font-bold tracking-[-0.01em] text-foreground">
+                  <h3 className="text-[16px] md:text-[18px] font-bold tracking-[-0.01em] text-foreground">
                     {c.title}
                   </h3>
                   <p className="mt-2 text-[14px] md:text-[14px] leading-[1.7] text-muted">

@@ -55,7 +55,7 @@ export default async function NewsDetailPage({
                 {formatDate(item.date)}
               </time>
             </div>
-            <h1 className="font-display font-bold text-[22px] md:text-[32px] lg:text-[40px] xl:text-[48px] leading-[1.25] tracking-[-0.02em]">
+            <h1 className="font-display font-bold text-[28px] md:text-[32px] lg:text-[40px] xl:text-[48px] leading-[1.25] tracking-[-0.02em]">
               {item.title}
             </h1>
           </div>
@@ -63,7 +63,7 @@ export default async function NewsDetailPage({
       </section>
 
       {/* Body */}
-      <article className="py-16 md:py-24 bg-white">
+      <article className="py-12 md:py-24 bg-white">
         <div className="container-base max-w-[760px]">
           <div className="border-l-[3px] border-brand pl-5 py-1 mb-7 md:mb-10">
             <p className="text-[16px] md:text-[18px] font-bold leading-[1.55] text-foreground">

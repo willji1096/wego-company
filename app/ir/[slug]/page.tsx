@@ -129,7 +129,7 @@ export default async function IRDetailPage({
                   <h2 className="inline-block border-b-[3px] border-brand pb-1.5 text-[18px] md:text-[20px] font-bold mb-8">
                     채용 절차
                   </h2>
-                  <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-5">
+                  <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-5">
                     {item.sections.process.map((step, i) => (
                       <div
                         key={step.step}

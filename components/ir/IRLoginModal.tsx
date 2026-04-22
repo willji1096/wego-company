@@ -92,10 +92,10 @@ export function IRLoginModal() {
           >
             <button
               onClick={() => setOpen(false)}
-              className="absolute top-4 right-4 z-10 flex h-8 w-8 items-center justify-center rounded-full bg-white/15 text-white backdrop-blur-sm transition-colors hover:bg-white/25"
+              className="absolute top-3 right-3 z-10 flex h-11 w-11 items-center justify-center rounded-full bg-white/15 text-white backdrop-blur-sm transition-colors hover:bg-white/25"
               aria-label="close"
             >
-              <X size={16} />
+              <X size={18} />
             </button>
 
             <div

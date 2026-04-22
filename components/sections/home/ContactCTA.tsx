@@ -44,11 +44,11 @@ export function ContactCTA() {
               onClick={() => setOpen(true)}
               whileHover={{ scale: 1.04 }}
               whileTap={{ scale: 0.98 }}
-              className="mt-8 md:mt-12 inline-flex items-center gap-3 h-[68px] pl-8 pr-3 rounded-full bg-white text-brand font-semibold text-[16px] tracking-[-0.01em] transition-colors hover:bg-white/95"
+              className="mt-8 md:mt-12 inline-flex items-center gap-3 h-14 md:h-16 pl-6 md:pl-8 pr-2.5 rounded-full bg-white text-brand font-semibold text-[15px] md:text-[16px] tracking-[-0.01em] transition-colors hover:bg-white/95"
             >
               제휴 문의하기
-              <span className="flex h-11 w-11 items-center justify-center rounded-full bg-brand text-white">
-                <ArrowRight size={18} />
+              <span className="flex h-10 w-10 md:h-11 md:w-11 items-center justify-center rounded-full bg-brand text-white">
+                <ArrowRight size={16} />
               </span>
             </motion.button>
           </div>

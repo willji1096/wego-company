@@ -156,9 +156,8 @@ function LiquidNoiseBackground() {
 function OldHero() {
   return (
     <motion.div
-      initial={{ opacity: 0 }}
+      initial={false}
       animate={{ opacity: 1 }}
-      transition={{ duration: 0.5 }}
       className="grid gap-5 md:gap-6 md:grid-cols-[minmax(0,1.95fr)_minmax(0,1fr)]"
     >
       {/* Left — blue panel with liquid-noise bg */}
@@ -186,7 +185,7 @@ function OldHero() {
 
       {/* Right — image card + dark link card */}
       <div className="flex flex-col gap-5 md:gap-6">
-        <div className="relative overflow-hidden rounded-[24px] md:rounded-[40px] bg-[#f1f5f9] h-[110px] md:h-auto md:flex-1 md:min-h-[416px]">
+        <div className="relative overflow-hidden rounded-[24px] md:rounded-[40px] bg-[#f1f5f9] h-[160px] md:h-auto md:flex-1 md:min-h-[416px]">
           <Image
             src="/hero/cube.jpg"
             alt="WEGO technology visualization"
@@ -236,9 +235,8 @@ function NewHero() {
 
   return (
     <motion.div
-      initial={{ opacity: 0 }}
+      initial={false}
       animate={{ opacity: 1 }}
-      transition={{ duration: 0.5 }}
       className="grid gap-5 md:gap-6 md:grid-cols-[minmax(0,1.95fr)_minmax(0,1fr)]"
     >
       {/* Left — clean blue panel */}
@@ -285,7 +283,7 @@ function NewHero() {
 
       {/* Right — image card + dark link card */}
       <div className="flex flex-col gap-5 md:gap-6">
-        <div className="relative overflow-hidden rounded-[24px] md:rounded-[40px] bg-[#f1f5f9] h-[110px] md:h-auto md:flex-1 md:min-h-[416px]">
+        <div className="relative overflow-hidden rounded-[24px] md:rounded-[40px] bg-[#f1f5f9] h-[160px] md:h-auto md:flex-1 md:min-h-[416px]">
           <Image
             src="/hero/cube.jpg"
             alt="WEGO technology visualization"

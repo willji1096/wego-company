@@ -38,7 +38,7 @@ export function NewsList() {
               setPage(1);
             }}
             className={cn(
-              "h-9 md:h-10 px-4 md:px-5 rounded-full text-[12px] md:text-[14px] font-medium tracking-[-0.01em] transition-all",
+              "h-10 px-4 md:px-5 rounded-full text-[12px] md:text-[14px] font-medium tracking-[-0.01em] transition-all",
               category === c
                 ? "bg-foreground text-white"
                 : "border border-border text-muted hover:border-foreground hover:text-foreground"
@@ -109,7 +109,7 @@ export function NewsList() {
         <button
           onClick={() => setPage((p) => Math.max(1, p - 1))}
           disabled={page === 1}
-          className="h-10 w-10 rounded-full border border-border text-[14px] disabled:opacity-30 hover:border-foreground transition-colors"
+          className="h-11 w-11 rounded-full border border-border text-[14px] disabled:opacity-30 hover:border-foreground transition-colors"
         >
           ‹
         </button>
@@ -118,7 +118,7 @@ export function NewsList() {
             key={p}
             onClick={() => setPage(p)}
             className={cn(
-              "h-10 w-10 rounded-full text-[14px] transition-all",
+              "h-11 w-11 rounded-full text-[14px] transition-all",
               p === page
                 ? "bg-foreground text-white"
                 : "text-muted hover:text-foreground"
@@ -130,7 +130,7 @@ export function NewsList() {
         <button
           onClick={() => setPage((p) => Math.min(totalPages, p + 1))}
           disabled={page === totalPages}
-          className="h-10 w-10 rounded-full border border-border text-[14px] disabled:opacity-30 hover:border-foreground transition-colors"
+          className="h-11 w-11 rounded-full border border-border text-[14px] disabled:opacity-30 hover:border-foreground transition-colors"
         >
           ›
         </button>

@@ -79,13 +79,13 @@ export function History() {
         </Reveal>
 
         <div ref={ref} className="relative mt-5 md:mt-20">
-          {/* horizontal line with dots */}
-          <div className="relative h-px bg-border-soft mb-8 md:mb-14">
+          {/* horizontal line with dots — hidden on mobile where grid is 1-col */}
+          <div className="hidden sm:block relative h-px bg-border-soft mb-8 md:mb-14">
             <motion.div
               className="absolute left-0 top-0 h-px bg-brand"
               style={{ width: lineWidth }}
             />
-            <div className="absolute inset-x-0 -top-[5px] grid grid-cols-2 sm:grid-cols-4">
+            <div className="absolute inset-x-0 -top-[5px] grid grid-cols-4">
               {CHAPTERS.map((c) => (
                 <div key={c.period} className="flex justify-start">
                   <span className="h-[11px] w-[11px] rounded-full bg-brand ring-4 ring-white" />

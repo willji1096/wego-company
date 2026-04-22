@@ -80,11 +80,11 @@ export function ContactModal() {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 24, scale: 0.97 }}
             transition={{ duration: 0.35, ease: [0.19, 1, 0.22, 1] }}
-            className="relative w-full max-w-[680px] max-h-[94vh] md:max-h-[92vh] overflow-hidden bg-white rounded-[18px] md:rounded-[28px] shadow-2xl flex flex-col"
+            className="relative w-full max-w-[680px] max-h-[94svh] md:max-h-[92vh] overflow-hidden bg-white rounded-[18px] md:rounded-[28px] shadow-2xl flex flex-col"
           >
             <button
               onClick={() => setOpen(false)}
-              className="absolute top-3.5 right-3.5 md:top-5 md:right-5 z-10 p-2 rounded-full bg-white/80 backdrop-blur-sm hover:bg-surface transition-colors"
+              className="absolute top-2.5 right-2.5 md:top-4 md:right-4 z-10 flex h-11 w-11 items-center justify-center rounded-full bg-white/80 backdrop-blur-sm hover:bg-surface transition-colors"
               aria-label="close"
             >
               <X size={18} />
@@ -266,10 +266,10 @@ function PrivacyConsentModal({
             <button
               type="button"
               onClick={onClose}
-              className="absolute top-4 right-4 z-10 flex h-9 w-9 items-center justify-center rounded-full bg-surface text-foreground hover:bg-[#e2e8f0] transition-colors"
+              className="absolute top-3 right-3 z-10 flex h-11 w-11 items-center justify-center rounded-full bg-surface text-foreground hover:bg-[#e2e8f0] transition-colors"
               aria-label="close"
             >
-              <X size={16} />
+              <X size={18} />
             </button>
             <div
               data-lenis-prevent
