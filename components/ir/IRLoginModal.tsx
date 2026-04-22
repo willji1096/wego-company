@@ -102,7 +102,7 @@ export function IRLoginModal() {
               data-lenis-prevent
               className="slim-scrollbar overflow-y-auto overscroll-contain"
             >
-              <div className="relative bg-[#053ae7] text-white px-7 md:px-8 pt-7 pb-8 md:pt-8 md:pb-10 overflow-hidden">
+              <div className="relative bg-[#053ae7] text-white px-5 md:px-8 pt-7 pb-8 md:pt-8 md:pb-10 overflow-hidden">
                 <div
                   aria-hidden
                   className="absolute -top-24 -right-16 h-[260px] w-[260px] rounded-full bg-white/10 blur-3xl pointer-events-none"
@@ -124,7 +124,7 @@ export function IRLoginModal() {
 
               <form
                 onSubmit={onSubmit}
-                className="px-7 md:px-8 pt-7 pb-7 md:pb-8 space-y-4"
+                className="px-5 md:px-8 pt-7 pb-7 md:pb-8 space-y-4"
               >
                 <div>
                   <label
