@@ -67,7 +67,7 @@ export function NewsHero({
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className={`mt-8 text-[14px] md:text-[16px] leading-[1.7] max-w-2xl ${
+            className={`mt-8 text-[14px] md:text-[16px] leading-[1.7] max-w-2xl text-balance ${
               isDark ? "text-white/70" : "text-muted"
             }`}
           >

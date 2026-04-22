@@ -101,7 +101,7 @@ export default async function NewsDetailPage({
             {next ? (
               <Link
                 href={`/news/${next.slug}`}
-                className="group flex items-center gap-4 p-5 border border-border rounded-2xl hover:border-foreground transition-colors md:flex-row-reverse md:text-right"
+                className="group flex flex-row-reverse text-right items-center gap-4 p-5 border border-border rounded-2xl hover:border-foreground transition-colors"
               >
                 <span className="inline-flex w-10 h-10 items-center justify-center rounded-full border border-border group-hover:bg-foreground group-hover:text-white group-hover:border-foreground transition-all shrink-0">
                   <ArrowRight size={15} />

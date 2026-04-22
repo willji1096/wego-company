@@ -29,7 +29,7 @@ export function NewsList() {
 
   return (
     <>
-      <div className="flex items-center gap-2 flex-wrap mb-7 md:mb-14">
+      <div className="no-scrollbar flex items-center gap-2 overflow-x-auto flex-nowrap md:flex-wrap mb-7 md:mb-14 pb-1 -mx-5 md:mx-0 px-5 md:px-0">
         {NEWS_CATEGORIES.map((c) => (
           <button
             key={c}
@@ -38,7 +38,7 @@ export function NewsList() {
               setPage(1);
             }}
             className={cn(
-              "h-10 px-4 md:px-5 rounded-full text-[12px] md:text-[14px] font-medium tracking-normal transition-all",
+              "h-10 px-4 md:px-5 rounded-full text-[12px] md:text-[14px] font-medium tracking-normal whitespace-nowrap shrink-0 transition-all",
               category === c
                 ? "bg-foreground text-white"
                 : "border border-border text-muted hover:border-foreground hover:text-foreground"
@@ -68,7 +68,7 @@ export function NewsList() {
             >
               <Link
                 href={`/news/${item.slug}`}
-                className="group block h-full"
+                className="group block h-full active:opacity-90 transition-opacity"
               >
                 <motion.div
                   whileHover={{ y: -6 }}
@@ -76,7 +76,7 @@ export function NewsList() {
                   className="h-full flex flex-col rounded-[14px] md:rounded-[20px] overflow-hidden border border-border bg-white"
                 >
                   <div
-                    className={`relative aspect-[4/3] bg-gradient-to-br ${item.gradient}`}
+                    className={`relative aspect-[16/9] md:aspect-[4/3] bg-gradient-to-br ${item.gradient}`}
                   >
                     <span className="absolute top-4 left-4 inline-flex h-7 items-center px-3 rounded-full bg-white/95 backdrop-blur text-[12px] font-semibold tracking-[1px] text-foreground shadow-sm">
                       {item.category}

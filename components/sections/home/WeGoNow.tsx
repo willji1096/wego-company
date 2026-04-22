@@ -14,7 +14,7 @@ export function WeGoNow() {
     <section className="relative py-12 md:py-28 bg-white">
       <div className="container-base">
         <div className="rounded-[12px] md:rounded-[32px] bg-surface px-6 py-8 md:px-16 md:py-16 lg:px-20">
-          <div className="flex items-end justify-between gap-6 mb-6 md:mb-16">
+          <div className="flex flex-col gap-3 mb-6 md:flex-row md:items-end md:justify-between md:gap-6 md:mb-16">
             <div>
               <p className="text-[14px] md:text-[14px] font-semibold tracking-[3px] uppercase text-brand">
                 Updates
@@ -47,7 +47,7 @@ export function WeGoNow() {
                     className="flex flex-col"
                   >
                     <div
-                      className={`relative aspect-[4/3] rounded-[12px] md:rounded-[18px] overflow-hidden bg-gradient-to-br ${n.gradient}`}
+                      className={`relative aspect-[16/9] md:aspect-[4/3] rounded-[12px] md:rounded-[18px] overflow-hidden bg-gradient-to-br ${n.gradient}`}
                     >
                       <span className="absolute top-4 left-4 inline-flex h-7 items-center px-3 rounded-full bg-white/95 backdrop-blur text-[12px] font-semibold tracking-[1px] text-foreground shadow-sm">
                         {n.category}
