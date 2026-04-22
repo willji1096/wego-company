@@ -28,7 +28,7 @@ export default function NotFound() {
           Error 404
         </p>
 
-        <h1 className="mt-6 md:mt-8 font-display font-bold text-[56px] md:text-[96px] lg:text-[128px] leading-[1] tracking-[-2px]">
+        <h1 className="mt-6 md:mt-8 font-display font-bold text-[72px] md:text-[120px] lg:text-[160px] leading-[1] tracking-[-2px] whitespace-nowrap">
           404
         </h1>
 

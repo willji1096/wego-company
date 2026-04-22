@@ -20,7 +20,7 @@ export function ContactCTA() {
             className="absolute -bottom-[300px] left-[-100px] w-[600px] h-[600px] rounded-full bg-white/10 blur-[140px] pointer-events-none"
           />
 
-          <div className="relative z-10 flex flex-col items-center text-center max-w-3xl mx-auto">
+          <div className="relative z-10 flex flex-col items-center text-center max-w-4xl mx-auto">
             <motion.h2
               initial={{ opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}

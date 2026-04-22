@@ -145,8 +145,8 @@ export default async function IRDetailPage({
                         </div>
                         {i < item.sections!.process!.length - 1 && (
                           <>
-                            <div className="sm:hidden flex justify-start ml-[22px] my-2">
-                              <div className="w-px h-4 bg-border" />
+                            <div className="sm:hidden flex justify-start ml-[23px] my-3">
+                              <div className="w-[2px] h-8 bg-border" />
                             </div>
                             <ArrowRight
                               size={16}
