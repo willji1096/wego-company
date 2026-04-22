@@ -28,11 +28,9 @@ export default function NotFound() {
           Error 404
         </p>
 
-        <div className="mt-6 md:mt-8">
-          <h1 className="font-display font-bold text-[64px] md:text-[120px] lg:text-[160px] leading-[1] tracking-[-2px] inline-block whitespace-nowrap">
-            404
-          </h1>
-        </div>
+        <h1 className="mt-6 md:mt-8 font-display font-bold text-[56px] md:text-[120px] lg:text-[160px] leading-[1] tracking-[-2px]">
+          404
+        </h1>
 
         <p className="mt-6 md:mt-8 text-[20px] md:text-[28px] font-semibold leading-[1.25] tracking-[-1px]">
           페이지를 찾을 수 없습니다.
