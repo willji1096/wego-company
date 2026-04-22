@@ -192,23 +192,23 @@ export function IRLoginModal() {
                 <button
                   type="button"
                   onClick={goContact}
-                  className="w-full text-left rounded-[14px] bg-surface hover:bg-[#eef2f7] transition-colors p-5 md:p-6 flex items-start gap-3"
+                  className="w-full text-left rounded-[14px] bg-surface hover:bg-[#eef2f7] transition-colors p-5 md:p-6"
                 >
-                  <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-[10px] bg-white border border-border-soft text-[18px] leading-none">
-                    📩
-                  </span>
-                  <span className="flex-1">
-                    <span className="block text-[14px] font-semibold tracking-normal text-foreground">
+                  <div className="flex items-center gap-3">
+                    <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-[10px] bg-white border border-border-soft text-[18px] leading-none">
+                      📩
+                    </span>
+                    <span className="text-[15px] font-semibold tracking-normal text-foreground">
                       주주 등록 문의
                     </span>
-                    <span className="mt-1 block text-[13px] leading-[1.6] text-muted">
-                      위고컴퍼니의 주주가 되고 싶으시거나 IR 자료 열람을
-                      원하시면 문의해 주세요.
-                    </span>
-                    <span className="mt-2 inline-flex items-center gap-1 text-[13px] font-semibold text-brand">
-                      투자 문의하기
-                      <ArrowRight size={12} />
-                    </span>
+                  </div>
+                  <p className="mt-3 text-[13px] leading-[1.6] text-muted">
+                    위고컴퍼니의 주주가 되고 싶으시거나 IR 자료 열람을
+                    원하시면 문의해 주세요.
+                  </p>
+                  <span className="mt-3 inline-flex items-center gap-1 text-[13px] font-semibold text-brand">
+                    투자 문의하기
+                    <ArrowRight size={12} />
                   </span>
                 </button>
               </form>
