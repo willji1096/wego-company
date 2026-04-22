@@ -278,12 +278,12 @@ function NewHero() {
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 1.1 }}
-            className="mt-5 md:mt-12 pt-4 md:pt-10 border-t border-white/20 text-white space-y-1.5"
+            className="mt-6 md:mt-12 pt-5 md:pt-10 border-t border-white/20 text-white space-y-2"
           >
-            <p className="text-[14px] md:text-[20px] leading-[1.7]">
+            <p className="text-[16px] md:text-[20px] leading-[1.7]">
               기술을 설계하는 팀, 산업의 미래를 디자인합니다.
             </p>
-            <p className="text-[12px] md:text-[16px] leading-[1.5] text-white/90">
+            <p className="text-[14px] md:text-[16px] leading-[1.6] text-white/90">
               AI와 블록체인의 융합으로 새로운 가치를 창출합니다.
             </p>
           </motion.div>
