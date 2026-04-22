@@ -21,7 +21,7 @@ export function Reveal({
     <motion.div
       initial={shouldReduce ? false : { opacity: 0, y }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.1 }}
+      viewport={{ once: true, amount: "some" }}
       transition={{
         duration: shouldReduce ? 0 : 0.85,
         ease: [0.19, 1, 0.22, 1],

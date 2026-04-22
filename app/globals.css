@@ -118,6 +118,7 @@
 }
 
 html {
+  background: var(--bg);
   overflow-x: hidden;
   scrollbar-gutter: stable;
 }
