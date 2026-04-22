@@ -166,7 +166,7 @@ export function BusinessPortfolio() {
                     <span className="text-[14px] md:text-[14px] text-foreground">
                       View Case Study
                     </span>
-                    <span className="flex h-10 w-10 items-center justify-center rounded-full bg-slate-300 transition-colors group-hover:bg-brand group-hover:text-white">
+                    <span className="flex h-10 w-10 items-center justify-center rounded-full bg-border transition-colors group-hover:bg-brand group-hover:text-white">
                       <ArrowUpRight size={16} />
                     </span>
                   </div>

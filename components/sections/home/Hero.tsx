@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 
 const SCRAMBLE_CHARS = "!<>-_\\/[]{}—=+*^?#";
@@ -38,8 +38,13 @@ function ScrambleText({
 }) {
   const [out, setOut] = useState(text);
   const rafRef = useRef(0);
+  const shouldReduce = useReducedMotion();
 
   useEffect(() => {
+    if (shouldReduce) {
+      setOut(text);
+      return;
+    }
     let start = 0;
     setOut(scrambleOnce(text));
 
@@ -68,7 +73,7 @@ function ScrambleText({
     };
     rafRef.current = requestAnimationFrame(tick);
     return () => cancelAnimationFrame(rafRef.current);
-  }, [text, duration, delay, cycleKey]);
+  }, [text, duration, delay, cycleKey, shouldReduce]);
 
   return (
     <span className={className} aria-label={text}>

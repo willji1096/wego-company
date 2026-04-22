@@ -81,7 +81,7 @@ export function TechIntro() {
                 />
 
                 {/* 01/02/03 big numeral top-right */}
-                <div className="absolute right-4 md:right-7 top-3 md:top-4 font-mono font-bold text-[56px] md:text-[72px] leading-none tracking-[-0.04em] text-white/5 select-none pointer-events-none">
+                <div className="absolute right-4 md:right-7 top-3 md:top-4 font-mono font-bold text-[40px] md:text-[72px] leading-none tracking-[-0.04em] text-white/5 select-none pointer-events-none">
                   {c.num}
                 </div>
 

@@ -118,9 +118,14 @@
 }
 
 html {
-  scroll-behavior: smooth;
   overflow-x: hidden;
   scrollbar-gutter: stable;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html:not(.lenis) {
+    scroll-behavior: smooth;
+  }
 }
 
 html.lenis {

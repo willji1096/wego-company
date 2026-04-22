@@ -86,12 +86,12 @@ function FooterColumn({
       <p className="text-[12px] md:text-[16px] font-semibold tracking-[-0.01em] text-white mb-2 md:mb-6">
         {title}
       </p>
-      <ul className="space-y-1.5 md:space-y-3.5">
+      <ul className="space-y-0.5 md:space-y-2">
         {items.map((item) => (
           <li key={item.href}>
             <Link
               href={item.href}
-              className="text-[12px] md:text-[14px] text-white/70 hover:text-white transition-colors"
+              className="inline-block py-1.5 md:py-1 text-[12px] md:text-[14px] text-white/70 hover:text-white transition-colors"
             >
               {item.label}
             </Link>
