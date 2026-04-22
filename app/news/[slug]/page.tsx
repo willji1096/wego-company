@@ -33,7 +33,7 @@ export default async function NewsDetailPage({
   return (
     <>
       {/* Hero */}
-      <section className="relative overflow-hidden bg-ink text-white pt-28 md:pt-36 pb-12 md:pb-24">
+      <section className="relative overflow-hidden bg-ink text-white pt-28 md:pt-36 pb-12 md:pb-28">
         <div
           aria-hidden
           className="absolute -top-40 -right-40 w-[560px] h-[560px] rounded-full bg-brand/15 blur-[140px] pointer-events-none"
@@ -66,7 +66,7 @@ export default async function NewsDetailPage({
       <article className="py-12 md:py-24 bg-white">
         <div className="container-base max-w-[760px]">
           <div className="border-l-[3px] border-brand pl-5 py-1 mb-7 md:mb-10">
-            <p className="text-[16px] md:text-[18px] font-bold leading-[1.55] text-foreground">
+            <p className="text-[16px] md:text-[18px] font-bold leading-[1.7] text-foreground">
               {item.excerpt}
             </p>
           </div>

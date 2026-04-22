@@ -47,7 +47,7 @@ export function TechIntro() {
               Who We Are
             </p>
             <Reveal>
-              <h2 className="mt-3 md:mt-5 font-display font-bold text-[26px] md:text-[40px] lg:text-[56px] xl:text-[64px] leading-[1.1] tracking-[-0.02em] text-foreground">
+              <h2 className="mt-3 md:mt-6 font-display font-bold text-[26px] md:text-[40px] lg:text-[56px] xl:text-[64px] leading-[1.1] tracking-[-0.02em] text-foreground">
                 기술로 산업의 미래를
                 <br />
                 디자인합니다
@@ -72,7 +72,7 @@ export function TechIntro() {
               <motion.article
                 whileHover={{ y: -6 }}
                 transition={{ duration: 0.35, ease: [0.19, 1, 0.22, 1] }}
-                className="group relative overflow-hidden rounded-[24px] md:rounded-[40px] bg-[#1C1831] text-white p-4 md:p-10 md:min-h-[340px] flex flex-col"
+                className="group relative overflow-hidden rounded-[24px] md:rounded-[40px] bg-[#1C1831] text-white p-4 md:p-8 md:min-h-[340px] flex flex-col"
               >
                 {/* bottom-left blue glow */}
                 <div
@@ -99,7 +99,7 @@ export function TechIntro() {
                 </div>
 
                 {/* body */}
-                <p className="relative mt-4 md:mt-6 text-[16px] md:text-[18px] leading-[1.62] text-white/70 flex-1">
+                <p className="relative mt-4 md:mt-6 text-[16px] md:text-[18px] leading-[1.7] text-white/70 flex-1">
                   {c.desc}
                 </p>
 

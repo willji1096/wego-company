@@ -101,7 +101,7 @@ export function History() {
                   <p className="text-[16px] md:text-[16px] font-semibold text-brand">
                     {ch.period}
                   </p>
-                  <h3 className="mt-3 font-display font-bold text-[18px] md:text-[24px] leading-[1.1] tracking-[-0.01em] text-foreground">
+                  <h3 className="mt-3 font-display font-bold text-[18px] md:text-[24px] leading-[1.25] tracking-[-0.01em] text-foreground">
                     {ch.title}
                   </h3>
                   <ul className="mt-3 md:mt-5 space-y-2 md:space-y-2.5">

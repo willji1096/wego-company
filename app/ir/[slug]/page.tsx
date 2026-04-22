@@ -105,7 +105,7 @@ export default async function IRDetailPage({
             <>
               {item.sections.overview && (
                 <section className="mb-10 md:mb-16">
-                  <h2 className="inline-block border-b-[3px] border-brand pb-1.5 text-[18px] md:text-[20px] font-bold mb-6">
+                  <h2 className="inline-block border-b-[3px] border-brand pb-1.5 text-[18px] md:text-[20px] font-bold leading-[1.3] mb-6">
                     채용 개요
                   </h2>
                   <div className="rounded-[14px] md:rounded-[20px] bg-surface p-4 md:p-8">
@@ -126,7 +126,7 @@ export default async function IRDetailPage({
 
               {item.sections.process && (
                 <section className="mb-10 md:mb-16">
-                  <h2 className="inline-block border-b-[3px] border-brand pb-1.5 text-[18px] md:text-[20px] font-bold mb-8">
+                  <h2 className="inline-block border-b-[3px] border-brand pb-1.5 text-[18px] md:text-[20px] font-bold leading-[1.3] mb-8">
                     채용 절차
                   </h2>
                   <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-5">
@@ -158,7 +158,7 @@ export default async function IRDetailPage({
 
               {item.sections.positions && (
                 <section className="mb-10 md:mb-16">
-                  <h2 className="inline-block border-b-[3px] border-brand pb-1.5 text-[18px] md:text-[20px] font-bold mb-6">
+                  <h2 className="inline-block border-b-[3px] border-brand pb-1.5 text-[18px] md:text-[20px] font-bold leading-[1.3] mb-6">
                     모집 부문
                   </h2>
                   <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
@@ -170,7 +170,7 @@ export default async function IRDetailPage({
                         <span className="text-[12px] font-bold tracking-[0.08em] uppercase text-brand">
                           {pos.tag}
                         </span>
-                        <h3 className="mt-2 text-[18px] md:text-[18px] font-bold text-foreground">
+                        <h3 className="mt-2 text-[18px] md:text-[18px] font-bold text-foreground leading-[1.25]">
                           {pos.title}
                         </h3>
                         <p className="mt-1 text-[12px] md:text-[14px] text-muted">
@@ -190,7 +190,7 @@ export default async function IRDetailPage({
 
               {item.sections.benefits && (
                 <section>
-                  <h2 className="inline-block border-b-[3px] border-brand pb-1.5 text-[18px] md:text-[20px] font-bold mb-6">
+                  <h2 className="inline-block border-b-[3px] border-brand pb-1.5 text-[18px] md:text-[20px] font-bold leading-[1.3] mb-6">
                     복지 및 혜택
                   </h2>
                   <div className="aspect-[16/6] rounded-[14px] md:rounded-[20px] bg-gradient-to-br from-[#dbeafe] via-white to-[#e0e7ff] mb-6" />

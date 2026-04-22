@@ -63,7 +63,7 @@ export function ConnectPeople() {
                 <span className="flex h-12 w-12 items-center justify-center rounded-[12px] bg-brand-soft text-brand">
                   <p.Icon size={22} strokeWidth={1.8} />
                 </span>
-                <h3 className="mt-4 md:mt-7 text-[16px] md:text-[20px] font-bold tracking-[-0.01em] text-foreground">
+                <h3 className="mt-4 md:mt-7 text-[16px] md:text-[20px] font-bold tracking-[-0.01em] text-foreground leading-[1.25]">
                   {p.title}
                 </h3>
                 <p className="mt-3 text-[14px] md:text-[14px] leading-[1.7] text-muted">

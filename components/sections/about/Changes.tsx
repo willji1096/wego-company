@@ -56,7 +56,7 @@ export function Changes() {
                   {c.num}
                 </span>
                 <div>
-                  <h3 className="text-[16px] md:text-[18px] font-bold tracking-[-0.01em] text-foreground">
+                  <h3 className="text-[16px] md:text-[18px] font-bold tracking-[-0.01em] text-foreground leading-[1.25]">
                     {c.title}
                   </h3>
                   <p className="mt-2 text-[14px] md:text-[14px] leading-[1.7] text-muted">

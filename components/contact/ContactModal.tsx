@@ -108,7 +108,7 @@ export function ContactModal() {
                 <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-brand text-white text-2xl mb-5">
                   ✓
                 </div>
-                <h3 className="text-xl font-bold mb-2">문의가 접수되었습니다</h3>
+                <h3 className="text-xl font-bold leading-[1.25] mb-2">문의가 접수되었습니다</h3>
                 <p className="text-[14px] text-muted">
                   영업일 기준 2~3일 내 회신드리겠습니다.
                 </p>
@@ -275,7 +275,7 @@ function PrivacyConsentModal({
               data-lenis-prevent
               className="slim-scrollbar overflow-y-auto overscroll-contain px-6 md:px-8 pt-7 md:pt-9 pb-6"
             >
-              <h3 className="text-[20px] md:text-[22px] font-bold tracking-[-0.02em] text-foreground pr-10">
+              <h3 className="text-[20px] md:text-[22px] font-bold tracking-[-0.02em] text-foreground leading-[1.25] pr-10">
                 개인정보 수집·이용 동의
               </h3>
 

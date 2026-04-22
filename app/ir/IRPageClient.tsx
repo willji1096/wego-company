@@ -28,7 +28,7 @@ export function IRPageClient() {
         subtitle="위고 컴퍼니의 새로운 소식을 전해드립니다."
       />
 
-      <section className="py-16 md:py-20 bg-white">
+      <section className="py-14 md:py-20 bg-white">
         <div className="container-base">
           <div className="flex items-center justify-between gap-4 mb-6 md:mb-10">
             <p className="text-[14px] md:text-[16px] text-foreground">
@@ -65,7 +65,7 @@ export function IRPageClient() {
                       {item.category}
                     </span>
                     <div className="flex-1 min-w-0">
-                      <h3 className="text-[16px] md:text-[16px] font-semibold tracking-[-0.01em] truncate group-hover:text-brand transition-colors">
+                      <h3 className="text-[16px] md:text-[16px] font-semibold tracking-[-0.01em] leading-[1.3] truncate group-hover:text-brand transition-colors">
                         {item.title}
                       </h3>
                     </div>

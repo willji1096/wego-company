@@ -4,7 +4,7 @@ import { Reveal } from "@/components/ui/Reveal";
 
 export function Beliefs() {
   return (
-    <section className="py-10 md:py-24 bg-white">
+    <section className="py-8 md:py-24 bg-white">
       <div className="container-base">
         <p className="flex items-center gap-3 text-[14px] md:text-[14px] font-semibold tracking-[0.22em] uppercase text-brand">
           <span className="h-px w-8 bg-brand" />
@@ -20,11 +20,11 @@ export function Beliefs() {
         </Reveal>
 
         <Reveal delay={0.15}>
-          <div className="mt-5 md:mt-20 rounded-[12px] md:rounded-[28px] bg-surface p-4 md:p-14 lg:p-16">
-            <p className="text-[16px] md:text-[24px] font-bold tracking-[-0.01em] text-foreground leading-[1.35]">
+          <div className="mt-6 md:mt-16 rounded-[12px] md:rounded-[28px] bg-surface p-4 md:p-14 lg:p-16">
+            <p className="text-[16px] md:text-[24px] font-bold tracking-[-0.01em] text-foreground leading-[1.6]">
               기술은 사람을 위해 존재해야 합니다.
             </p>
-            <div className="mt-4 space-y-2 text-[14px] md:text-[16px] leading-[1.85] text-muted">
+            <div className="mt-4 space-y-2 text-[14px] md:text-[16px] leading-[1.75] text-muted">
               <p>
                 우리는 복잡한 기술을 드러내기보다, 자연스럽게 스며드는 경험을
                 만듭니다.

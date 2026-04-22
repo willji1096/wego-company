@@ -95,7 +95,7 @@ export function RnDCenter() {
                       <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-white/10">
                         <c.Icon size={22} className="text-white" />
                       </span>
-                      <h3 className="mt-3 md:mt-5 text-[16px] md:text-[20px] font-bold tracking-[-0.01em]">
+                      <h3 className="mt-3 md:mt-5 text-[16px] md:text-[20px] font-bold tracking-[-0.01em] leading-[1.25]">
                         {c.title}
                       </h3>
                       <p className="mt-3 text-[14px] md:text-[14px] leading-[1.65] text-white/70">

@@ -33,7 +33,7 @@ export function ContactCTA() {
               함께 성장할 준비가 되셨나요?
             </motion.h2>
 
-            <p className="mt-3 md:mt-8 text-[14px] md:text-[16px] leading-[1.8] text-white/70 max-w-2xl">
+            <p className="mt-3 md:mt-8 text-[14px] md:text-[16px] leading-[1.75] text-white/70 max-w-2xl">
               위고컴퍼니의 혁신적인 기술과 함께 새로운 비즈니스를 시작해보세요.
               <br className="hidden md:block" />
               파트너십 · 투자 · 제품 문의 모두 환영합니다.

@@ -280,7 +280,7 @@ function NewHero() {
             transition={{ duration: 0.8, delay: 1.1 }}
             className="mt-5 md:mt-12 pt-4 md:pt-10 border-t border-white/20 text-white space-y-1.5"
           >
-            <p className="text-[14px] md:text-[20px] leading-[1.55] md:leading-[1.625]">
+            <p className="text-[14px] md:text-[20px] leading-[1.7]">
               기술을 설계하는 팀, 산업의 미래를 디자인합니다.
             </p>
             <p className="text-[12px] md:text-[16px] leading-[1.5] text-white/90">
