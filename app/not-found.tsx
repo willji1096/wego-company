@@ -14,7 +14,7 @@ export default function NotFound() {
       />
       <div
         aria-hidden
-        className="absolute inset-0 opacity-[0.06] pointer-events-none"
+        className="absolute inset-0 opacity-[6%] pointer-events-none"
         style={{
           backgroundImage:
             "linear-gradient(rgba(255,255,255,.6) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.6) 1px, transparent 1px)",

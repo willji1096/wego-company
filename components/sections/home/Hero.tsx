@@ -168,7 +168,7 @@ function OldHero() {
       className="grid gap-5 md:gap-6 md:grid-cols-[minmax(0,1.95fr)_minmax(0,1fr)]"
     >
       {/* Left — blue panel with liquid-noise bg */}
-      <div className="bg-[#053ae7] rounded-[2.5rem] relative overflow-hidden p-8 md:p-12 lg:p-16 flex flex-col justify-center text-white min-h-[420px] md:min-h-[600px]">
+      <div className="bg-[#053ae7] rounded-[40px] relative overflow-hidden p-8 md:p-12 lg:p-16 flex flex-col justify-center text-white min-h-[420px] md:min-h-[600px]">
         <LiquidNoiseBackground />
         <div className="relative z-10 max-w-4xl">
           <div className="mb-8 text-[#9aceff] font-medium tracking-wide text-lg uppercase">

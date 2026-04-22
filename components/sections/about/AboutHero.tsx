@@ -11,7 +11,7 @@ export function AboutHero() {
       />
       <div
         aria-hidden
-        className="absolute inset-0 opacity-[0.06] pointer-events-none"
+        className="absolute inset-0 opacity-[6%] pointer-events-none"
         style={{
           backgroundImage:
             "linear-gradient(rgba(255,255,255,.6) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.6) 1px, transparent 1px)",
@@ -31,7 +31,7 @@ export function AboutHero() {
         </motion.p>
 
  <h1 className="mt-8 font-display font-medium leading-[42px] md:leading-[76px] tracking-[-2px] text-[40px] md:text-[72px]">
-          <span className="block overflow-hidden pb-[0.08em]">
+          <span className="block overflow-hidden pb-[4px] md:pb-[6px]">
             <motion.span
               initial={{ y: "110%" }}
               animate={{ y: 0 }}
@@ -41,7 +41,7 @@ export function AboutHero() {
               We <span className="text-brand">Design</span>
             </motion.span>
           </span>
-          <span className="block overflow-hidden pb-[0.08em]">
+          <span className="block overflow-hidden pb-[4px] md:pb-[6px]">
             <motion.span
               initial={{ y: "110%" }}
               animate={{ y: 0 }}
