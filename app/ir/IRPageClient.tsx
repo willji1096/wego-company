@@ -30,11 +30,11 @@ export function IRPageClient() {
 
       <section className="py-12 md:py-28 bg-white">
         <div className="container-base">
-          <div className="flex items-center justify-between gap-4 mb-6 md:mb-10">
-            <p className="text-[14px] md:text-[16px] text-foreground">
+          <div className="flex flex-col gap-3 mb-6 md:flex-row md:items-center md:justify-between md:gap-4 md:mb-10">
+            <p className="text-[14px] md:text-[16px] text-foreground whitespace-nowrap">
               Total <b className="text-brand">{filtered.length}</b>
             </p>
-            <div className="relative w-full max-w-[280px]">
+            <div className="relative w-full md:max-w-[280px]">
               <Search
                 size={16}
                 className="absolute left-4 top-1/2 -translate-y-1/2 text-muted pointer-events-none"
@@ -61,17 +61,22 @@ export function IRPageClient() {
                 <li key={item.slug} className="border-b border-border-soft">
                   <Link
                     href={`/ir/${item.slug}`}
-                    className="flex items-center gap-4 md:gap-8 py-6 md:py-7 hover:bg-surface -mx-4 md:-mx-6 px-4 md:px-6 rounded-xl transition-colors group"
+                    className="flex flex-col md:flex-row md:items-center gap-3 md:gap-8 py-6 md:py-7 hover:bg-surface md:-mx-6 md:px-6 md:rounded-xl transition-colors group active:opacity-90"
                   >
-                    <span className="inline-flex h-7 items-center px-4 rounded-full bg-brand-soft text-brand text-[12px] md:text-[12px] font-bold tracking-[1px] shrink-0 min-w-[60px] justify-center">
-                      {item.category}
-                    </span>
+                    <div className="flex items-center gap-3 md:contents">
+                      <span className="inline-flex h-7 items-center px-3 md:px-4 rounded-full bg-brand-soft text-brand text-[12px] font-bold tracking-[1px] shrink-0 md:min-w-[60px] md:justify-center">
+                        {item.category}
+                      </span>
+                      <time className="text-[12px] text-muted tabular-nums shrink-0 md:hidden">
+                        {formatDate(item.date)}
+                      </time>
+                    </div>
                     <div className="flex-1 min-w-0">
-                      <h3 className="text-[14px] md:text-[16px] font-semibold tracking-normal leading-[1.4] line-clamp-2 md:line-clamp-1 group-hover:text-brand transition-colors">
+                      <h3 className="text-[15px] md:text-[16px] font-semibold tracking-normal leading-[1.4] line-clamp-2 md:line-clamp-1 group-hover:text-brand transition-colors">
                         {item.title}
                       </h3>
                     </div>
-                    <time className="text-[12px] md:text-[14px] text-muted tabular-nums shrink-0">
+                    <time className="hidden md:block text-[14px] text-muted tabular-nums shrink-0">
                       {formatDate(item.date)}
                     </time>
                   </Link>
