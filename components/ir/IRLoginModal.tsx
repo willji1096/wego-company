@@ -74,7 +74,7 @@ export function IRLoginModal() {
     <AnimatePresence>
       {open && (
         <motion.div
-          className="fixed inset-0 z-[100] flex items-center justify-center p-3 md:p-8"
+          className="fixed inset-0 z-[100] flex items-center justify-center p-4 md:p-8"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
@@ -88,11 +88,11 @@ export function IRLoginModal() {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 24, scale: 0.97 }}
             transition={{ duration: 0.35, ease: [0.19, 1, 0.22, 1] }}
-            className="relative w-full max-w-[460px] max-h-[94vh] md:max-h-[92vh] overflow-hidden bg-white rounded-[20px] md:rounded-[24px] shadow-2xl flex flex-col"
+            className="relative w-full max-w-[460px] max-h-[94vh] md:max-h-[92vh] [max-height:94dvh] md:[max-height:92dvh] overflow-hidden bg-white rounded-[20px] md:rounded-[24px] shadow-2xl flex flex-col"
           >
             <button
               onClick={() => setOpen(false)}
-              className="absolute top-3 right-3 z-10 flex h-11 w-11 items-center justify-center rounded-full bg-white/15 text-white backdrop-blur-sm transition-colors hover:bg-white/25"
+              className="absolute top-3 right-3 z-10 flex h-11 w-11 items-center justify-center rounded-full bg-black/20 text-white backdrop-blur-sm drop-shadow-[0_1px_3px_rgba(0,0,0,0.4)] transition-colors hover:bg-black/30"
               aria-label="close"
             >
               <X size={18} />
@@ -102,7 +102,7 @@ export function IRLoginModal() {
               data-lenis-prevent
               className="slim-scrollbar overflow-y-auto overscroll-contain"
             >
-              <div className="relative bg-[#053ae7] text-white px-7 md:px-8 pt-7 pb-10 md:pt-8 md:pb-12 overflow-hidden">
+              <div className="relative bg-[#053ae7] text-white px-7 md:px-8 pt-7 pb-8 md:pt-8 md:pb-10 overflow-hidden">
                 <div
                   aria-hidden
                   className="absolute -top-24 -right-16 h-[260px] w-[260px] rounded-full bg-white/10 blur-3xl pointer-events-none"
@@ -114,7 +114,7 @@ export function IRLoginModal() {
                   <h2 className="mt-5 text-[22px] md:text-[24px] font-bold tracking-[-1px] leading-[1.25]">
                     IR Center 주주 전용
                   </h2>
-                  <p className="mt-2 text-[13px] md:text-[14px] leading-[1.65] text-white/70">
+                  <p className="mt-2 text-[13px] md:text-[14px] leading-[1.65] text-white/85">
                     위고컴퍼니 IR Center는 주주 전용 페이지입니다.
                     <br />
                     등록된 계정으로 로그인해 주세요.
@@ -158,17 +158,16 @@ export function IRLoginModal() {
                     placeholder="비밀번호를 입력하세요"
                     className="w-full h-11 md:h-12 rounded-[10px] border border-border bg-white px-3.5 md:px-4 text-[14px] placeholder:text-muted focus:border-brand focus:outline-none transition"
                   />
+                  {error && (
+                    <p className="mt-1.5 text-[13px] text-red-600">{error}</p>
+                  )}
                 </div>
-
-                {error && (
-                  <p className="text-[13px] text-red-600 -mt-1">{error}</p>
-                )}
 
                 <button
                   type="submit"
                   disabled={loading}
                   className={cn(
-                    "w-full h-12 md:h-12 mt-1 rounded-[12px] text-[15px] font-bold tracking-normal inline-flex items-center justify-center gap-2 transition-colors",
+                    "w-full h-12 rounded-[12px] text-[15px] font-bold tracking-normal inline-flex items-center justify-center gap-2 transition-colors",
                     loading
                       ? "bg-[#e2e8f0] text-muted cursor-not-allowed"
                       : "bg-brand text-white hover:bg-brand-hover"
@@ -184,7 +183,7 @@ export function IRLoginModal() {
                   )}
                 </button>
 
-                <div className="flex items-center gap-3 pt-2 pb-1">
+                <div className="flex items-center gap-3 pt-2 pb-2">
                   <span className="h-px flex-1 bg-border-soft" />
                   <span className="text-[12px] text-muted">주주가 아니신가요?</span>
                   <span className="h-px flex-1 bg-border-soft" />
