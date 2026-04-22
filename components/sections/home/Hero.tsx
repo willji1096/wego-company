@@ -206,7 +206,7 @@ function OldHero() {
             className="absolute inset-0 mix-blend-overlay bg-brand/20"
           />
           <div className="absolute bottom-5 md:bottom-8 left-5 md:left-8 text-white">
-            <p className="text-[12px] md:text-[14px] font-medium tracking-[0.2em] md:tracking-[0.22em] uppercase opacity-80">
+            <p className="text-[12px] md:text-[14px] font-medium tracking-[2px] md:tracking-[3px] uppercase opacity-80">
               Since
             </p>
             <p className="mt-1 font-display font-bold text-[20px] md:text-[40px] leading-none">
@@ -220,10 +220,10 @@ function OldHero() {
           className="group relative overflow-hidden rounded-[16px] md:rounded-[24px] bg-ink text-white px-4 md:px-7 py-4 md:py-7 flex items-center justify-between min-h-[110px] md:min-h-[160px] transition-colors hover:bg-[#141b2e]"
         >
           <div>
-            <p className="text-[12px] md:text-[12px] font-medium tracking-[0.22em] uppercase text-white/70">
+            <p className="text-[12px] md:text-[12px] font-medium tracking-[3px] uppercase text-white/70">
               Company Profile
             </p>
-            <p className="mt-2 text-[20px] md:text-[24px] font-bold tracking-[-0.01em]">
+            <p className="mt-2 text-[20px] md:text-[24px] font-bold tracking-normal">
               View About
             </p>
           </div>
@@ -255,12 +255,12 @@ function NewHero() {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="text-[12px] md:text-[18px] leading-[1.55] font-medium tracking-[0.2em] md:tracking-[0.15em] uppercase text-[color:var(--brand-eyebrow)]"
+            className="text-[12px] md:text-[18px] leading-[1.55] font-medium tracking-[2px] md:tracking-[2px] uppercase text-[color:var(--brand-eyebrow)]"
           >
             We Design Technology
           </motion.p>
 
-          <h1 className="mt-4 md:mt-8 font-display font-medium text-white tracking-[-0.025em] text-[40px] md:text-[72px] lg:text-[96px] leading-[1] md:leading-[0.95]">
+          <h1 className="mt-4 md:mt-8 font-display font-medium text-white tracking-[-2px] text-[40px] md:text-[72px] lg:text-[96px] leading-[1] md:leading-[0.95]">
             <span className="block">
               <ScrambleText text="We Design" duration={800} delay={120} />
             </span>
@@ -306,7 +306,7 @@ function NewHero() {
             className="absolute inset-0 mix-blend-overlay bg-brand/20"
           />
           <div className="absolute bottom-5 md:bottom-8 left-5 md:left-8 text-white">
-            <p className="text-[12px] md:text-[14px] font-medium tracking-[0.2em] md:tracking-[0.22em] uppercase opacity-80">
+            <p className="text-[12px] md:text-[14px] font-medium tracking-[2px] md:tracking-[3px] uppercase opacity-80">
               Since
             </p>
             <p className="mt-1 font-display font-bold text-[20px] md:text-[40px] leading-none">
@@ -320,10 +320,10 @@ function NewHero() {
           className="group relative overflow-hidden rounded-[16px] md:rounded-[24px] bg-ink text-white px-4 md:px-7 py-4 md:py-7 flex items-center justify-between min-h-[110px] md:min-h-[160px] transition-colors hover:bg-[#141b2e]"
         >
           <div>
-            <p className="text-[12px] md:text-[12px] font-medium tracking-[0.22em] uppercase text-white/70">
+            <p className="text-[12px] md:text-[12px] font-medium tracking-[3px] uppercase text-white/70">
               Company Profile
             </p>
-            <p className="mt-2 text-[20px] md:text-[24px] font-bold tracking-[-0.01em]">
+            <p className="mt-2 text-[20px] md:text-[24px] font-bold tracking-normal">
               View About
             </p>
           </div>
@@ -361,7 +361,7 @@ function VariantToggle({
               role="tab"
               aria-selected={selected}
               onClick={() => onChange(key)}
-              className={`rounded-full px-3 md:px-4 py-1.5 tracking-[0.12em] uppercase transition-colors ${
+              className={`rounded-full px-3 md:px-4 py-1.5 tracking-[2px] uppercase transition-colors ${
                 selected
                   ? "bg-brand text-white shadow-sm"
                   : "text-muted hover:text-foreground"

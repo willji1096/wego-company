@@ -38,7 +38,7 @@ export function Header({ onContactClick }: { onContactClick?: () => void }) {
         <Link href="/" className="group">
           <span
             className={cn(
-              "text-[20px] md:text-[20px] font-bold tracking-[0.08em] transition-colors",
+              "text-[20px] md:text-[20px] font-bold tracking-[1px] transition-colors",
               onHero ? "text-white" : "text-foreground"
             )}
           >
@@ -54,7 +54,7 @@ export function Header({ onContactClick }: { onContactClick?: () => void }) {
                 : pathname === item.href || pathname.startsWith(`${item.href}/`);
             const isIR = item.href === "/ir";
             const linkClass = cn(
-              "relative inline-flex items-center gap-1 text-[14px] font-semibold tracking-[0.12em] transition-colors",
+              "relative inline-flex items-center gap-1 text-[14px] font-semibold tracking-[2px] transition-colors",
               onHero
                 ? "text-white/90 hover:text-white"
                 : "text-muted hover:text-foreground"
@@ -97,7 +97,7 @@ export function Header({ onContactClick }: { onContactClick?: () => void }) {
             type="button"
             onClick={onContactClick}
             className={cn(
-              "hidden md:inline-flex items-center gap-2 h-11 px-5 rounded-full text-[12px] font-semibold tracking-[0.12em] transition-colors",
+              "hidden md:inline-flex items-center gap-2 h-11 px-5 rounded-full text-[12px] font-semibold tracking-[2px] transition-colors",
               onHero
                 ? "bg-white text-brand hover:bg-white/90"
                 : "bg-brand text-white hover:bg-brand-hover"
@@ -140,7 +140,7 @@ export function Header({ onContactClick }: { onContactClick?: () => void }) {
                       closeMobile();
                       openIRAuth(true);
                     }}
-                    className="text-left text-[16px] font-semibold tracking-[0.12em] py-2 text-foreground"
+                    className="text-left text-[16px] font-semibold tracking-[2px] py-2 text-foreground"
                   >
                     {item.label}
                   </button>
@@ -149,7 +149,7 @@ export function Header({ onContactClick }: { onContactClick?: () => void }) {
                     key={item.href}
                     href={item.href}
                     onClick={closeMobile}
-                    className="text-[16px] font-semibold tracking-[0.12em] py-2 text-foreground"
+                    className="text-[16px] font-semibold tracking-[2px] py-2 text-foreground"
                   >
                     {item.label}
                   </Link>
@@ -161,7 +161,7 @@ export function Header({ onContactClick }: { onContactClick?: () => void }) {
                   closeMobile();
                   onContactClick?.();
                 }}
-                className="mt-2 inline-flex items-center justify-center gap-2 h-11 rounded-full bg-brand text-white text-[14px] font-semibold tracking-[0.12em]"
+                className="mt-2 inline-flex items-center justify-center gap-2 h-11 rounded-full bg-brand text-white text-[14px] font-semibold tracking-[2px]"
               >
                 Contact Us
                 <ArrowRight size={14} />

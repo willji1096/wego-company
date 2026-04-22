@@ -61,11 +61,11 @@ export function IRPageClient() {
                     href={`/ir/${item.slug}`}
                     className="flex items-center gap-4 md:gap-8 py-6 md:py-7 hover:bg-surface -mx-4 md:-mx-6 px-4 md:px-6 rounded-xl transition-colors group"
                   >
-                    <span className="inline-flex h-7 items-center px-4 rounded-full bg-brand-soft text-brand text-[12px] md:text-[12px] font-bold tracking-[0.04em] shrink-0 min-w-[60px] justify-center">
+                    <span className="inline-flex h-7 items-center px-4 rounded-full bg-brand-soft text-brand text-[12px] md:text-[12px] font-bold tracking-[1px] shrink-0 min-w-[60px] justify-center">
                       {item.category}
                     </span>
                     <div className="flex-1 min-w-0">
-                      <h3 className="text-[16px] md:text-[16px] font-semibold tracking-[-0.01em] leading-[1.3] truncate group-hover:text-brand transition-colors">
+                      <h3 className="text-[16px] md:text-[16px] font-semibold tracking-normal leading-[1.3] truncate group-hover:text-brand transition-colors">
                         {item.title}
                       </h3>
                     </div>

@@ -60,11 +60,11 @@ export function RnDCenter() {
             <div className="grid gap-8 md:grid-cols-[minmax(0,0.9fr)_minmax(0,1.2fr)] md:gap-16">
               {/* Left copy */}
               <div className="flex flex-col">
-                <span className="inline-flex h-8 items-center px-4 rounded-full bg-brand text-white text-[12px] font-semibold tracking-[0.22em] w-fit">
+                <span className="inline-flex h-8 items-center px-4 rounded-full bg-brand text-white text-[12px] font-semibold tracking-[3px] w-fit">
                   R&amp;D CENTER
                 </span>
                 <Reveal>
-                  <h2 className="mt-3 md:mt-6 font-display font-bold text-[24px] md:text-[32px] lg:text-[40px] xl:text-[48px] leading-[1.1] tracking-[-0.02em]">
+                  <h2 className="mt-3 md:mt-6 font-display font-bold text-[24px] md:text-[32px] lg:text-[40px] xl:text-[48px] leading-[1.1] tracking-[-1px]">
                     함께 성장할
                     <br />
                     파트너를 찾습니다.
@@ -77,7 +77,7 @@ export function RnDCenter() {
                 <button
                   type="button"
                   onClick={() => openContact(true)}
-                  className="mt-10 group inline-flex items-center gap-2 text-[16px] md:text-[16px] font-semibold tracking-[-0.01em] text-white w-fit"
+                  className="mt-10 group inline-flex items-center gap-2 text-[16px] md:text-[16px] font-semibold tracking-normal text-white w-fit"
                 >
                   파트너십 문의하기
                   <ArrowRight
@@ -95,7 +95,7 @@ export function RnDCenter() {
                       <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-white/10">
                         <c.Icon size={22} className="text-white" />
                       </span>
-                      <h3 className="mt-3 md:mt-5 text-[16px] md:text-[20px] font-bold tracking-[-0.01em] leading-[1.25]">
+                      <h3 className="mt-3 md:mt-5 text-[16px] md:text-[20px] font-bold tracking-normal leading-[1.25]">
                         {c.title}
                       </h3>
                       <p className="mt-3 text-[14px] md:text-[14px] leading-[1.65] text-white/70">

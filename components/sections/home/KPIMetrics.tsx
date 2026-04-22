@@ -18,11 +18,11 @@ export function KPIMetrics() {
           {/* Header row */}
           <div className="grid gap-6 md:grid-cols-[auto_1fr_auto] md:items-end md:gap-10 mb-8 md:mb-16">
             <div>
-              <p className="text-[14px] md:text-[14px] font-semibold tracking-[0.22em] uppercase text-brand">
+              <p className="text-[14px] md:text-[14px] font-semibold tracking-[3px] uppercase text-brand">
                 Performance
               </p>
               <Reveal>
-                <h2 className="mt-3 md:mt-6 font-display font-bold text-[26px] md:text-[36px] lg:text-[40px] leading-[1.1] tracking-[-0.02em]">
+                <h2 className="mt-3 md:mt-6 font-display font-bold text-[26px] md:text-[36px] lg:text-[40px] leading-[1.1] tracking-[-1px]">
                   Key Metrics
                 </h2>
               </Reveal>
@@ -41,14 +41,14 @@ export function KPIMetrics() {
             {METRICS.map((m, i) => (
               <Reveal key={i} delay={i * 0.08}>
                 <div>
-                  <div className="font-display font-bold text-[28px] md:text-[56px] lg:text-[60px] leading-[1] tracking-[-0.03em] text-brand">
+                  <div className="font-display font-bold text-[28px] md:text-[56px] lg:text-[60px] leading-[1] tracking-[-2px] text-brand">
                     <Counter
                       value={m.value}
                       decimals={m.decimals}
                       suffix={m.suffix}
                     />
                   </div>
-                  <p className="mt-3 md:mt-5 text-[16px] md:text-[20px] font-bold tracking-[-0.01em] text-foreground">
+                  <p className="mt-3 md:mt-5 text-[16px] md:text-[20px] font-bold tracking-normal text-foreground">
                     {m.label}
                   </p>
                   <p className="mt-2 text-[12px] md:text-[14px] text-muted leading-[1.6]">

@@ -43,11 +43,11 @@ export function TechIntro() {
       <div className="container-base">
         <div className="grid gap-6 md:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] md:gap-16 mb-6 md:mb-20">
           <div>
-            <p className="text-[14px] md:text-[14px] font-semibold tracking-[0.22em] uppercase text-brand">
+            <p className="text-[14px] md:text-[14px] font-semibold tracking-[3px] uppercase text-brand">
               Who We Are
             </p>
             <Reveal>
-              <h2 className="mt-3 md:mt-6 font-display font-bold text-[26px] md:text-[40px] lg:text-[56px] xl:text-[64px] leading-[1.1] tracking-[-0.02em] text-foreground">
+              <h2 className="mt-3 md:mt-6 font-display font-bold text-[26px] md:text-[40px] lg:text-[56px] xl:text-[64px] leading-[1.1] tracking-[-1px] text-foreground">
                 기술로 산업의 미래를
                 <br />
                 디자인합니다
@@ -81,7 +81,7 @@ export function TechIntro() {
                 />
 
                 {/* 01/02/03 big numeral top-right */}
-                <div className="absolute right-4 md:right-7 top-3 md:top-4 font-mono font-bold text-[40px] md:text-[72px] leading-none tracking-[-0.04em] text-white/5 select-none pointer-events-none">
+                <div className="absolute right-4 md:right-7 top-3 md:top-4 font-mono font-bold text-[40px] md:text-[72px] leading-none tracking-[-3px] text-white/5 select-none pointer-events-none">
                   {c.num}
                 </div>
 
@@ -92,7 +92,7 @@ export function TechIntro() {
 
                 {/* title + accent bar */}
                 <div className="relative mt-4 md:mt-12">
-                  <h3 className="text-[18px] md:text-[28px] font-bold tracking-[-0.02em] leading-[1.2]">
+                  <h3 className="text-[18px] md:text-[28px] font-bold tracking-[-1px] leading-[1.2]">
                     {c.title}
                   </h3>
                   <div className="mt-4 h-[2px] w-10 bg-brand" />
@@ -105,7 +105,7 @@ export function TechIntro() {
 
                 {/* footer row */}
                 <div className="relative mt-3 md:mt-7 pt-3 md:pt-5 border-t border-white/10 flex items-center justify-between opacity-80">
-                  <span className="font-mono text-[12px] md:text-[12px] tracking-[0.2em] uppercase text-white/50">
+                  <span className="font-mono text-[12px] md:text-[12px] tracking-[2px] uppercase text-white/50">
                     {c.tag}
                   </span>
                   <ArrowUpRight

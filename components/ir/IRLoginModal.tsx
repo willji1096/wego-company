@@ -111,7 +111,7 @@ export function IRLoginModal() {
                   <div className="flex h-12 w-12 items-center justify-center rounded-[12px] bg-white/15 backdrop-blur-sm">
                     <Lock size={20} />
                   </div>
-                  <h2 className="mt-5 text-[22px] md:text-[24px] font-bold tracking-[-0.02em] leading-[1.25]">
+                  <h2 className="mt-5 text-[22px] md:text-[24px] font-bold tracking-[-1px] leading-[1.25]">
                     IR Center 주주 전용
                   </h2>
                   <p className="mt-2 text-[13px] md:text-[14px] leading-[1.65] text-white/70">
@@ -129,7 +129,7 @@ export function IRLoginModal() {
                 <div>
                   <label
                     htmlFor="ir-id"
-                    className="block text-[13px] font-semibold tracking-[-0.01em] text-foreground mb-1.5"
+                    className="block text-[13px] font-semibold tracking-normal text-foreground mb-1.5"
                   >
                     아이디 (ID)
                   </label>
@@ -145,7 +145,7 @@ export function IRLoginModal() {
                 <div>
                   <label
                     htmlFor="ir-pw"
-                    className="block text-[13px] font-semibold tracking-[-0.01em] text-foreground mb-1.5"
+                    className="block text-[13px] font-semibold tracking-normal text-foreground mb-1.5"
                   >
                     비밀번호 (PASSWORD)
                   </label>
@@ -168,7 +168,7 @@ export function IRLoginModal() {
                   type="submit"
                   disabled={loading}
                   className={cn(
-                    "w-full h-12 md:h-12 mt-1 rounded-[12px] text-[15px] font-bold tracking-[-0.01em] inline-flex items-center justify-center gap-2 transition-colors",
+                    "w-full h-12 md:h-12 mt-1 rounded-[12px] text-[15px] font-bold tracking-normal inline-flex items-center justify-center gap-2 transition-colors",
                     loading
                       ? "bg-[#e2e8f0] text-muted cursor-not-allowed"
                       : "bg-brand text-white hover:bg-brand-hover"
@@ -199,7 +199,7 @@ export function IRLoginModal() {
                     📩
                   </span>
                   <span className="flex-1">
-                    <span className="block text-[14px] font-semibold tracking-[-0.01em] text-foreground">
+                    <span className="block text-[14px] font-semibold tracking-normal text-foreground">
                       주주 등록 문의
                     </span>
                     <span className="mt-1 block text-[13px] leading-[1.6] text-muted">

@@ -30,12 +30,12 @@ export function Changes() {
   return (
     <section className="py-12 md:py-28 bg-white">
       <div className="container-base">
-        <p className="flex items-center gap-3 text-[14px] md:text-[14px] font-semibold tracking-[0.22em] uppercase text-brand">
+        <p className="flex items-center gap-3 text-[14px] md:text-[14px] font-semibold tracking-[3px] uppercase text-brand">
           <span className="h-px w-8 bg-brand" />
           Goal
         </p>
         <Reveal>
-          <h2 className="mt-3 md:mt-6 font-display font-bold text-[26px] md:text-[40px] lg:text-[56px] xl:text-[64px] leading-[1.1] tracking-[-0.02em]">
+          <h2 className="mt-3 md:mt-6 font-display font-bold text-[26px] md:text-[40px] lg:text-[56px] xl:text-[64px] leading-[1.1] tracking-[-1px]">
             우리가 만들어갈
             <br />
             <span className="text-brand">변화</span>
@@ -56,7 +56,7 @@ export function Changes() {
                   {c.num}
                 </span>
                 <div>
-                  <h3 className="text-[16px] md:text-[18px] font-bold tracking-[-0.01em] text-foreground leading-[1.25]">
+                  <h3 className="text-[16px] md:text-[18px] font-bold tracking-normal text-foreground leading-[1.25]">
                     {c.title}
                   </h3>
                   <p className="mt-2 text-[14px] md:text-[14px] leading-[1.7] text-muted">
@@ -64,7 +64,7 @@ export function Changes() {
                   </p>
                 </div>
                 <span
-                  className={`inline-flex h-8 items-center px-4 rounded-full text-[12px] font-bold tracking-[0.15em] justify-self-start md:justify-self-end ${c.badgeClass}`}
+                  className={`inline-flex h-8 items-center px-4 rounded-full text-[12px] font-bold tracking-[2px] justify-self-start md:justify-self-end ${c.badgeClass}`}
                 >
                   {c.badge}
                 </span>

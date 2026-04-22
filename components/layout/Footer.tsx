@@ -16,7 +16,7 @@ export function Footer() {
           {/* Brand + address */}
           <div>
             <Link href="/" className="inline-block">
-              <span className="text-[20px] md:text-[32px] font-bold tracking-[0.08em]">
+              <span className="text-[20px] md:text-[32px] font-bold tracking-[1px]">
                 {BRAND.name}
               </span>
             </Link>
@@ -50,7 +50,7 @@ export function Footer() {
         </div>
 
         <div className="mt-7 md:mt-16 pt-5 md:pt-8 border-t border-ink-line flex flex-col md:flex-row md:items-center md:justify-between gap-3">
-          <p className="text-[12px] tracking-[0.04em] text-white/50">
+          <p className="text-[12px] tracking-[1px] text-white/50">
             © 2026 WeGo Company Inc. All rights reserved.
           </p>
           <ul className="flex items-center gap-3 text-[12px] text-white/70">
@@ -83,7 +83,7 @@ function FooterColumn({
 }) {
   return (
     <div>
-      <p className="text-[12px] md:text-[16px] font-semibold tracking-[-0.01em] text-white mb-2 md:mb-6">
+      <p className="text-[12px] md:text-[16px] font-semibold tracking-normal text-white mb-2 md:mb-6">
         {title}
       </p>
       <ul className="space-y-0.5 md:space-y-2">

@@ -38,7 +38,7 @@ export function NewsList() {
               setPage(1);
             }}
             className={cn(
-              "h-10 px-4 md:px-5 rounded-full text-[12px] md:text-[14px] font-medium tracking-[-0.01em] transition-all",
+              "h-10 px-4 md:px-5 rounded-full text-[12px] md:text-[14px] font-medium tracking-normal transition-all",
               category === c
                 ? "bg-foreground text-white"
                 : "border border-border text-muted hover:border-foreground hover:text-foreground"
@@ -78,12 +78,12 @@ export function NewsList() {
                   <div
                     className={`relative aspect-[4/3] bg-gradient-to-br ${item.gradient}`}
                   >
-                    <span className="absolute top-4 left-4 inline-flex h-7 items-center px-3 rounded-full bg-white/95 backdrop-blur text-[12px] font-semibold tracking-[0.04em] text-foreground shadow-sm">
+                    <span className="absolute top-4 left-4 inline-flex h-7 items-center px-3 rounded-full bg-white/95 backdrop-blur text-[12px] font-semibold tracking-[1px] text-foreground shadow-sm">
                       {item.category}
                     </span>
                   </div>
                   <div className="flex flex-col flex-1 p-6 md:p-8">
-                    <h3 className="text-[16px] md:text-[16px] font-semibold leading-[1.5] tracking-[-0.01em] text-foreground line-clamp-2 group-hover:text-brand transition-colors">
+                    <h3 className="text-[16px] md:text-[16px] font-semibold leading-[1.5] tracking-normal text-foreground line-clamp-2 group-hover:text-brand transition-colors">
                       {item.title}
                     </h3>
                     <p className="mt-3 text-[14px] text-muted line-clamp-2 leading-[1.6] flex-1">

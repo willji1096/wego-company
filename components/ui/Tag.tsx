@@ -10,7 +10,7 @@ export function Tag({
   return (
     <span
       className={cn(
-        "inline-flex items-center h-7 px-3 rounded-full border border-border text-[12px] font-medium tracking-[0.06em] text-muted bg-white/70 backdrop-blur-sm",
+        "inline-flex items-center h-7 px-3 rounded-full border border-border text-[12px] font-medium tracking-[1px] text-muted bg-white/70 backdrop-blur-sm",
         className
       )}
     >

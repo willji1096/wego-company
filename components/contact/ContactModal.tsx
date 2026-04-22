@@ -95,7 +95,7 @@ export function ContactModal() {
               className="slim-scrollbar overflow-y-auto overscroll-contain p-5 md:p-12"
             >
             <div className="mb-5 md:mb-10 pr-10 md:pr-0">
-              <h2 className="text-[22px] md:text-[32px] font-bold tracking-[-0.02em] leading-[1.2]">
+              <h2 className="text-[22px] md:text-[32px] font-bold tracking-[-1px] leading-[1.2]">
                 문의
               </h2>
               <p className="mt-2 md:mt-3 text-[13px] md:text-[14px] text-muted leading-[1.6]">
@@ -114,7 +114,7 @@ export function ContactModal() {
                 </p>
                 <button
                   onClick={() => setOpen(false)}
-                  className="mt-8 h-11 px-6 rounded-full bg-foreground text-white text-[14px] font-semibold tracking-[-0.01em]"
+                  className="mt-8 h-11 px-6 rounded-full bg-foreground text-white text-[14px] font-semibold tracking-normal"
                 >
                   닫기
                 </button>
@@ -211,7 +211,7 @@ export function ContactModal() {
                   type="submit"
                   disabled={isSubmitting || !agreed}
                   className={cn(
-                    "w-full h-12 md:h-14 mt-3 md:mt-4 rounded-full text-[15px] md:text-[16px] font-bold tracking-[-0.01em] inline-flex items-center justify-center gap-2 transition-all",
+                    "w-full h-12 md:h-14 mt-3 md:mt-4 rounded-full text-[15px] md:text-[16px] font-bold tracking-normal inline-flex items-center justify-center gap-2 transition-all",
                     isSubmitting || !agreed
                       ? "bg-[#e2e8f0] text-muted cursor-not-allowed"
                       : "bg-brand text-white hover:bg-brand-hover"
@@ -275,7 +275,7 @@ function PrivacyConsentModal({
               data-lenis-prevent
               className="slim-scrollbar overflow-y-auto overscroll-contain px-6 md:px-8 pt-7 md:pt-9 pb-6"
             >
-              <h3 className="text-[20px] md:text-[22px] font-bold tracking-[-0.02em] text-foreground leading-[1.25] pr-10">
+              <h3 className="text-[20px] md:text-[22px] font-bold tracking-[-1px] text-foreground leading-[1.25] pr-10">
                 개인정보 수집·이용 동의
               </h3>
 
@@ -340,7 +340,7 @@ function PrivacyConsentModal({
               <button
                 type="button"
                 onClick={onClose}
-                className="w-full h-12 md:h-14 rounded-full bg-brand text-white text-[15px] md:text-[16px] font-bold tracking-[-0.01em] hover:bg-brand-hover transition-colors"
+                className="w-full h-12 md:h-14 rounded-full bg-brand text-white text-[15px] md:text-[16px] font-bold tracking-normal hover:bg-brand-hover transition-colors"
               >
                 확인
               </button>
@@ -363,7 +363,7 @@ function Field({
 }) {
   return (
     <div>
-      <label className="block text-[13px] md:text-[14px] font-semibold tracking-[-0.01em] text-foreground mb-1.5 md:mb-2">
+      <label className="block text-[13px] md:text-[14px] font-semibold tracking-normal text-foreground mb-1.5 md:mb-2">
         {label}
       </label>
       {children}

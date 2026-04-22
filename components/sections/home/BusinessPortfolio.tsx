@@ -76,11 +76,11 @@ export function BusinessPortfolio() {
       <div className="container-base">
         <div className="flex items-end justify-between gap-6 mb-6 md:mb-16">
           <div>
-            <p className="text-[14px] md:text-[14px] font-semibold tracking-[0.22em] uppercase text-brand">
+            <p className="text-[14px] md:text-[14px] font-semibold tracking-[3px] uppercase text-brand">
               Our Works
             </p>
             <Reveal>
-              <h2 className="mt-3 md:mt-6 font-display font-bold text-[26px] md:text-[40px] lg:text-[56px] xl:text-[64px] leading-[1.05] tracking-[-0.02em]">
+              <h2 className="mt-3 md:mt-6 font-display font-bold text-[26px] md:text-[40px] lg:text-[56px] xl:text-[64px] leading-[1.05] tracking-[-1px]">
                 Business
                 <br />
                 Portfolio.
@@ -114,7 +114,7 @@ export function BusinessPortfolio() {
                     sizes="(min-width: 1024px) 380px, (min-width: 768px) 50vw, 100vw"
                     className="object-cover"
                   />
-                  <span className="absolute top-5 left-5 inline-flex items-center h-7 px-3 rounded-full bg-white/90 backdrop-blur text-[12px] font-bold tracking-[0.08em] uppercase text-foreground shadow-sm">
+                  <span className="absolute top-5 left-5 inline-flex items-center h-7 px-3 rounded-full bg-white/90 backdrop-blur text-[12px] font-bold tracking-[1px] uppercase text-foreground shadow-sm">
                     {b.tag}
                   </span>
                 </div>
@@ -135,7 +135,7 @@ export function BusinessPortfolio() {
                     />
                   </span>
 
-                  <h3 className="text-[18px] md:text-[24px] font-bold tracking-[-0.01em] text-foreground leading-[1.3]">
+                  <h3 className="text-[18px] md:text-[24px] font-bold tracking-normal text-foreground leading-[1.3]">
                     {b.name} · {b.korean}
                   </h3>
                   <p className="mt-2 text-[16px] md:text-[16px] leading-[1.55] text-muted-soft">

@@ -24,13 +24,13 @@ export function AboutHero() {
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="flex items-center gap-3 text-[14px] md:text-[14px] font-semibold tracking-[0.22em] uppercase text-brand"
+          className="flex items-center gap-3 text-[14px] md:text-[14px] font-semibold tracking-[3px] uppercase text-brand"
         >
           <span className="h-px w-8 bg-brand" />
           Company Overview
         </motion.p>
 
-        <h1 className="mt-8 font-display font-medium leading-[1.05] tracking-[-0.025em] text-[36px] md:text-[64px] lg:text-[88px] xl:text-[120px]">
+        <h1 className="mt-8 font-display font-medium leading-[1.05] tracking-[-2px] text-[36px] md:text-[64px] lg:text-[88px] xl:text-[120px]">
           <span className="block overflow-hidden pb-[0.08em]">
             <motion.span
               initial={{ y: "110%" }}

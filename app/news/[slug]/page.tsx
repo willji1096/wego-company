@@ -48,14 +48,14 @@ export default async function NewsDetailPage({
           </Link>
           <div className="mt-5 md:mt-14 max-w-4xl">
             <div className="flex items-center gap-3 mb-5 md:mb-6">
-              <span className="inline-flex h-7 items-center px-3 rounded-full bg-brand text-white text-[12px] font-bold tracking-[0.08em]">
+              <span className="inline-flex h-7 items-center px-3 rounded-full bg-brand text-white text-[12px] font-bold tracking-[1px]">
                 {item.category}
               </span>
               <time className="text-[14px] md:text-[14px] text-white/70 tabular-nums">
                 {formatDate(item.date)}
               </time>
             </div>
-            <h1 className="font-display font-bold text-[28px] md:text-[32px] lg:text-[40px] xl:text-[48px] leading-[1.25] tracking-[-0.02em]">
+            <h1 className="font-display font-bold text-[28px] md:text-[32px] lg:text-[40px] xl:text-[48px] leading-[1.25] tracking-[-1px]">
               {item.title}
             </h1>
           </div>
@@ -89,7 +89,7 @@ export default async function NewsDetailPage({
                   <ArrowLeft size={15} />
                 </span>
                 <div className="min-w-0">
-                  <p className="text-[12px] tracking-[0.2em] text-muted mb-1">
+                  <p className="text-[12px] tracking-[2px] text-muted mb-1">
                     PREV
                   </p>
                   <p className="text-[14px] font-medium truncate">{prev.title}</p>
@@ -107,7 +107,7 @@ export default async function NewsDetailPage({
                   <ArrowRight size={15} />
                 </span>
                 <div className="min-w-0 flex-1">
-                  <p className="text-[12px] tracking-[0.2em] text-muted mb-1">
+                  <p className="text-[12px] tracking-[2px] text-muted mb-1">
                     NEXT
                   </p>
                   <p className="text-[14px] font-medium truncate">{next.title}</p>
@@ -120,7 +120,7 @@ export default async function NewsDetailPage({
           <div className="mt-8 text-center">
             <Link
               href="/news"
-              className="inline-flex items-center gap-2 h-11 px-6 rounded-full bg-foreground text-white text-[14px] font-semibold tracking-[-0.01em]"
+              className="inline-flex items-center gap-2 h-11 px-6 rounded-full bg-foreground text-white text-[14px] font-semibold tracking-normal"
             >
               목록으로
             </Link>

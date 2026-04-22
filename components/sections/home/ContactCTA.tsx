@@ -26,7 +26,7 @@ export function ContactCTA() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-80px" }}
               transition={{ duration: 0.9, ease: [0.19, 1, 0.22, 1] }}
-              className="font-display font-bold text-[30px] md:text-[40px] lg:text-[48px] xl:text-[60px] leading-[1.15] tracking-[-0.02em] text-balance"
+              className="font-display font-bold text-[30px] md:text-[40px] lg:text-[48px] xl:text-[60px] leading-[1.15] tracking-[-1px] text-balance"
             >
               AI와 보안 기술로
               <br />
@@ -44,7 +44,7 @@ export function ContactCTA() {
               onClick={() => setOpen(true)}
               whileHover={{ scale: 1.04 }}
               whileTap={{ scale: 0.98 }}
-              className="mt-8 md:mt-12 inline-flex items-center gap-3 h-14 md:h-16 pl-6 md:pl-8 pr-2.5 rounded-full bg-white text-brand font-semibold text-[15px] md:text-[16px] tracking-[-0.01em] transition-colors hover:bg-white/95"
+              className="mt-8 md:mt-12 inline-flex items-center gap-3 h-14 md:h-16 pl-6 md:pl-8 pr-2.5 rounded-full bg-white text-brand font-semibold text-[15px] md:text-[16px] tracking-normal transition-colors hover:bg-white/95"
             >
               제휴 문의하기
               <span className="flex h-10 w-10 md:h-11 md:w-11 items-center justify-center rounded-full bg-brand text-white">

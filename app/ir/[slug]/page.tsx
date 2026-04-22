@@ -72,7 +72,7 @@ export default async function IRDetailPage({
           </Link>
           <div className="mt-5 md:mt-14 max-w-4xl">
             <div className="flex items-center gap-3 mb-5 md:mb-6">
-              <span className="inline-flex h-7 items-center px-3 rounded-full bg-white/20 backdrop-blur text-white text-[12px] md:text-[12px] font-bold tracking-[0.08em]">
+              <span className="inline-flex h-7 items-center px-3 rounded-full bg-white/20 backdrop-blur text-white text-[12px] md:text-[12px] font-bold tracking-[1px]">
                 {item.category}
               </span>
               <time className="text-[14px] md:text-[14px] text-white/70 tabular-nums">
@@ -80,11 +80,11 @@ export default async function IRDetailPage({
               </time>
             </div>
             <div className="flex items-center gap-4 flex-wrap">
-              <h1 className="font-display font-bold text-[24px] md:text-[32px] lg:text-[36px] xl:text-[42px] leading-[1.25] tracking-[-0.02em]">
+              <h1 className="font-display font-bold text-[24px] md:text-[32px] lg:text-[36px] xl:text-[42px] leading-[1.25] tracking-[-1px]">
                 {item.title}
               </h1>
               {dday !== null && dday > 0 && (
-                <span className="inline-flex h-8 items-center px-3 rounded-full bg-white text-brand text-[14px] font-bold tracking-[-0.01em]">
+                <span className="inline-flex h-8 items-center px-3 rounded-full bg-white text-brand text-[14px] font-bold tracking-normal">
                   D-{dday}
                 </span>
               )}
@@ -167,7 +167,7 @@ export default async function IRDetailPage({
                         key={pos.title}
                         className="group p-6 rounded-[14px] md:rounded-[20px] bg-surface hover:bg-brand-soft transition-colors cursor-pointer"
                       >
-                        <span className="text-[12px] font-bold tracking-[0.08em] uppercase text-brand">
+                        <span className="text-[12px] font-bold tracking-[1px] uppercase text-brand">
                           {pos.tag}
                         </span>
                         <h3 className="mt-2 text-[18px] md:text-[18px] font-bold text-foreground leading-[1.25]">
@@ -220,7 +220,7 @@ export default async function IRDetailPage({
         <div className="container-base text-center">
           <Link
             href="/ir"
-            className="inline-flex items-center gap-2 h-11 px-6 rounded-full bg-foreground text-white text-[14px] font-semibold tracking-[-0.01em]"
+            className="inline-flex items-center gap-2 h-11 px-6 rounded-full bg-foreground text-white text-[14px] font-semibold tracking-normal"
           >
             목록으로
           </Link>

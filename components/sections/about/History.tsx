@@ -61,12 +61,12 @@ export function History() {
   return (
     <section className="py-12 md:py-28 bg-surface">
       <div className="container-base">
-        <p className="flex items-center gap-3 text-[14px] md:text-[14px] font-semibold tracking-[0.22em] uppercase text-brand">
+        <p className="flex items-center gap-3 text-[14px] md:text-[14px] font-semibold tracking-[3px] uppercase text-brand">
           <span className="h-px w-8 bg-brand" />
           Company History
         </p>
         <Reveal>
-          <h2 className="mt-3 md:mt-6 font-display font-bold text-[26px] md:text-[40px] lg:text-[56px] xl:text-[64px] leading-[1.1] tracking-[-0.02em]">
+          <h2 className="mt-3 md:mt-6 font-display font-bold text-[26px] md:text-[40px] lg:text-[56px] xl:text-[64px] leading-[1.1] tracking-[-1px]">
             우리가 걸어온
             <br />
             <span className="text-brand">주요 발자취</span>
@@ -101,7 +101,7 @@ export function History() {
                   <p className="text-[16px] md:text-[16px] font-semibold text-brand">
                     {ch.period}
                   </p>
-                  <h3 className="mt-3 font-display font-bold text-[18px] md:text-[24px] leading-[1.25] tracking-[-0.01em] text-foreground">
+                  <h3 className="mt-3 font-display font-bold text-[18px] md:text-[24px] leading-[1.25] tracking-normal text-foreground">
                     {ch.title}
                   </h3>
                   <ul className="mt-3 md:mt-5 space-y-2 md:space-y-2.5">
