@@ -79,16 +79,14 @@ export default async function IRDetailPage({
                 {formatDate(item.date)}
               </time>
             </div>
-            <div className="flex items-center gap-4 flex-wrap">
-              <h1 className="font-display font-bold text-[24px] md:text-[32px] lg:text-[36px] xl:text-[42px] leading-[1.25] tracking-[-1px]">
-                {item.title}
-              </h1>
-              {dday !== null && dday > 0 && (
-                <span className="inline-flex h-8 items-center px-3 rounded-full bg-white text-brand text-[14px] font-bold tracking-normal">
-                  D-{dday}
-                </span>
-              )}
-            </div>
+            <h1 className="font-display font-bold text-[24px] md:text-[32px] lg:text-[36px] xl:text-[42px] leading-[1.25] tracking-[-1px]">
+              {item.title}
+            </h1>
+            {dday !== null && dday > 0 && (
+              <span className="mt-4 inline-flex h-8 items-center px-3 rounded-full bg-white text-brand text-[14px] font-bold tracking-normal">
+                D-{dday}
+              </span>
+            )}
             {item.sections?.tagline && (
               <p className="mt-5 text-[14px] md:text-[16px] text-white/70 leading-[1.6]">
                 {item.sections.tagline}
@@ -129,11 +127,11 @@ export default async function IRDetailPage({
                   <h2 className="inline-block border-b-[3px] border-brand pb-1.5 text-[18px] md:text-[20px] font-bold leading-[1.3] mb-8">
                     채용 절차
                   </h2>
-                  <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-5">
+                  <div className="grid grid-cols-1 sm:grid-cols-5 gap-5">
                     {item.sections.process.map((step, i) => (
                       <div
                         key={step.step}
-                        className="flex flex-col items-center text-center"
+                        className="relative flex flex-col items-center text-center"
                       >
                         <span className="flex h-12 w-12 items-center justify-center rounded-full bg-brand-soft text-brand font-bold text-[16px]">
                           {step.step}
@@ -147,7 +145,7 @@ export default async function IRDetailPage({
                         {i < item.sections!.process!.length - 1 && (
                           <ArrowRight
                             size={16}
-                            className="hidden lg:block absolute mt-3 translate-x-[110px] text-muted/40"
+                            className="hidden sm:block absolute right-0 top-3 translate-x-1/2 text-muted/40"
                           />
                         )}
                       </div>
@@ -165,7 +163,7 @@ export default async function IRDetailPage({
                     {item.sections.positions.map((pos) => (
                       <div
                         key={pos.title}
-                        className="group p-6 rounded-[14px] md:rounded-[20px] bg-surface hover:bg-brand-soft transition-colors cursor-pointer"
+                        className="p-6 rounded-[14px] md:rounded-[20px] bg-surface"
                       >
                         <span className="text-[12px] font-bold tracking-[1px] uppercase text-brand">
                           {pos.tag}
@@ -176,12 +174,6 @@ export default async function IRDetailPage({
                         <p className="mt-1 text-[12px] md:text-[14px] text-muted">
                           {pos.type}
                         </p>
-                        <div className="mt-4 flex justify-end">
-                          <ArrowRight
-                            size={16}
-                            className="text-muted group-hover:text-brand transition-colors"
-                          />
-                        </div>
                       </div>
                     ))}
                   </div>
@@ -193,7 +185,6 @@ export default async function IRDetailPage({
                   <h2 className="inline-block border-b-[3px] border-brand pb-1.5 text-[18px] md:text-[20px] font-bold leading-[1.3] mb-6">
                     복지 및 혜택
                   </h2>
-                  <div className="aspect-[16/6] rounded-[14px] md:rounded-[20px] bg-gradient-to-br from-[#dbeafe] via-white to-[#e0e7ff] mb-6" />
                   <ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
                     {item.sections.benefits.map((b) => (
                       <li
@@ -220,7 +211,7 @@ export default async function IRDetailPage({
         <div className="container-base text-center">
           <Link
             href="/ir"
-            className="inline-flex items-center gap-2 h-11 px-6 rounded-full bg-foreground text-white text-[14px] font-semibold tracking-normal"
+            className="inline-flex items-center gap-2 h-11 px-6 rounded-full bg-foreground text-white text-[14px] font-semibold tracking-normal hover:bg-ink-alt transition-colors"
           >
             목록으로
           </Link>

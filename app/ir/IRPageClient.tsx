@@ -28,7 +28,7 @@ export function IRPageClient() {
         subtitle="위고 컴퍼니의 새로운 소식을 전해드립니다."
       />
 
-      <section className="py-16 md:py-28 bg-white">
+      <section className="py-12 md:py-28 bg-white">
         <div className="container-base">
           <div className="flex items-center justify-between gap-4 mb-6 md:mb-10">
             <p className="text-[14px] md:text-[16px] text-foreground">
@@ -51,7 +51,9 @@ export function IRPageClient() {
 
           {filtered.length === 0 ? (
             <div className="py-20 text-center text-[14px] text-muted border-t border-b border-border">
-              검색 결과가 없습니다.
+              {query.trim()
+                ? "검색 결과가 없습니다."
+                : "등록된 IR 자료가 없습니다."}
             </div>
           ) : (
             <ul className="border-t border-border">
@@ -65,7 +67,7 @@ export function IRPageClient() {
                       {item.category}
                     </span>
                     <div className="flex-1 min-w-0">
-                      <h3 className="text-[16px] md:text-[16px] font-semibold tracking-normal leading-[1.3] truncate group-hover:text-brand transition-colors">
+                      <h3 className="text-[14px] md:text-[16px] font-semibold tracking-normal leading-[1.4] line-clamp-2 md:line-clamp-1 group-hover:text-brand transition-colors">
                         {item.title}
                       </h3>
                     </div>
