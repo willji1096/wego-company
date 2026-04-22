@@ -20,7 +20,7 @@ export function WeGoNow() {
                 Updates
               </p>
               <Reveal>
-                <h2 className="mt-3 font-display font-bold text-[clamp(26px,5vw,44px)] leading-[1.1] tracking-[-0.02em]">
+                <h2 className="mt-3 font-display font-bold text-[26px] md:text-[36px] lg:text-[44px] leading-[1.1] tracking-[-0.02em]">
                   WeGo Now.
                 </h2>
               </Reveal>

@@ -37,7 +37,7 @@ export function LegalArticle({
       <h2 className="text-[18px] md:text-[22px] font-semibold tracking-[-0.01em] text-ink">
         {title}
       </h2>
-      <div className="text-[14px] md:text-[15px] text-slate-700 leading-[1.8] space-y-3">
+      <div className="text-[14px] md:text-[15px] text-muted leading-[1.8] space-y-3">
         {children}
       </div>
     </article>
@@ -46,7 +46,7 @@ export function LegalArticle({
 
 export function LegalList({ items }: { items: ReactNode[] }) {
   return (
-    <ul className="list-disc pl-5 space-y-1.5 marker:text-slate-400">
+    <ul className="list-disc pl-5 space-y-1.5 marker:text-muted/50">
       {items.map((item, i) => (
         <li key={i}>{item}</li>
       ))}
@@ -65,11 +65,11 @@ export function LegalTable({
     <div className="overflow-x-auto">
       <table className="w-full text-left text-[13px] md:text-[14px] border-collapse">
         <thead>
-          <tr className="bg-slate-50 text-slate-900">
+          <tr className="bg-surface text-foreground">
             {headers.map((h) => (
               <th
                 key={h}
-                className="px-4 py-3 font-semibold border-b border-slate-200"
+                className="px-4 py-3 font-semibold border-b border-border"
               >
                 {h}
               </th>
@@ -78,9 +78,9 @@ export function LegalTable({
         </thead>
         <tbody>
           {rows.map((row, i) => (
-            <tr key={i} className="border-b border-slate-100">
+            <tr key={i} className="border-b border-border-soft">
               {row.map((cell, j) => (
-                <td key={j} className="px-4 py-3 align-top text-slate-700">
+                <td key={j} className="px-4 py-3 align-top text-muted">
                   {cell}
                 </td>
               ))}

@@ -16,18 +16,18 @@ export default function TermsPage() {
       eyebrow="Terms of Service"
       meta="위고컴퍼니 웹사이트 이용에 관한 약관입니다."
     >
-      <dl className="grid gap-2 sm:grid-cols-3 rounded-[12px] bg-slate-50 p-4 md:p-5 text-[13px] md:text-[14px]">
+      <dl className="grid gap-2 sm:grid-cols-3 rounded-[12px] bg-surface p-4 md:p-5 text-[13px] md:text-[14px]">
         <div className="flex flex-col">
-          <dt className="text-slate-500">시행일</dt>
-          <dd className="mt-0.5 font-medium text-slate-900">2026년 1월 1일</dd>
+          <dt className="text-muted">시행일</dt>
+          <dd className="mt-0.5 font-medium text-foreground">2026년 1월 1일</dd>
         </div>
         <div className="flex flex-col">
-          <dt className="text-slate-500">버전</dt>
-          <dd className="mt-0.5 font-medium text-slate-900">v1.0</dd>
+          <dt className="text-muted">버전</dt>
+          <dd className="mt-0.5 font-medium text-foreground">v1.0</dd>
         </div>
         <div className="flex flex-col">
-          <dt className="text-slate-500">적용 대상</dt>
-          <dd className="mt-0.5 font-medium text-slate-900">
+          <dt className="text-muted">적용 대상</dt>
+          <dd className="mt-0.5 font-medium text-foreground">
             wegocompany.net 및 관련 서비스
           </dd>
         </div>
@@ -139,7 +139,7 @@ export default function TermsPage() {
               이메일:{" "}
               <a
                 href="mailto:wego@wegocompany.net"
-                className="underline underline-offset-2 hover:text-slate-900"
+                className="underline underline-offset-2 hover:text-foreground transition-colors"
               >
                 wego@wegocompany.net
               </a>
@@ -149,7 +149,7 @@ export default function TermsPage() {
         />
       </LegalArticle>
 
-      <p className="text-[13px] md:text-[14px] text-slate-500 pt-2 border-t border-slate-100">
+      <p className="text-[13px] md:text-[14px] text-muted pt-2 border-t border-border-soft">
         부칙: 이 약관은 2026년 1월 1일부터 시행합니다.
       </p>
     </LegalPage>

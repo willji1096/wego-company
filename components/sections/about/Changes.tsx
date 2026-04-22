@@ -35,7 +35,7 @@ export function Changes() {
           Goal
         </p>
         <Reveal>
-          <h2 className="mt-3 md:mt-6 font-display font-bold text-[clamp(26px,5vw,64px)] leading-[1.1] tracking-[-0.02em]">
+          <h2 className="mt-3 md:mt-6 font-display font-bold text-[26px] md:text-[40px] lg:text-[56px] xl:text-[64px] leading-[1.1] tracking-[-0.02em]">
             우리가 만들어갈
             <br />
             <span className="text-brand">변화</span>

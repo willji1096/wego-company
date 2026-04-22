@@ -47,7 +47,7 @@ export function TechIntro() {
               Who We Are
             </p>
             <Reveal>
-              <h2 className="mt-3 md:mt-5 font-display font-bold text-[clamp(26px,5vw,64px)] leading-[1.1] tracking-[-0.02em] text-foreground">
+              <h2 className="mt-3 md:mt-5 font-display font-bold text-[26px] md:text-[40px] lg:text-[56px] xl:text-[64px] leading-[1.1] tracking-[-0.02em] text-foreground">
                 기술로 산업의 미래를
                 <br />
                 디자인합니다

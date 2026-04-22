@@ -30,7 +30,7 @@ export function AboutHero() {
           Company Overview
         </motion.p>
 
-        <h1 className="mt-8 font-display font-medium leading-[1.05] tracking-[-0.025em] text-[clamp(36px,8.5vw,120px)]">
+        <h1 className="mt-8 font-display font-medium leading-[1.05] tracking-[-0.025em] text-[36px] md:text-[64px] lg:text-[88px] xl:text-[120px]">
           <span className="block overflow-hidden pb-[0.08em]">
             <motion.span
               initial={{ y: "110%" }}

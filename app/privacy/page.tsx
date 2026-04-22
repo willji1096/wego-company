@@ -18,18 +18,18 @@ export default function PrivacyPage() {
       eyebrow="Privacy Policy"
       meta="위고컴퍼니는 이용자의 개인정보를 소중히 여기며 개인정보 보호법을 준수합니다."
     >
-      <dl className="grid gap-2 sm:grid-cols-3 rounded-[12px] bg-slate-50 p-4 md:p-5 text-[13px] md:text-[14px]">
+      <dl className="grid gap-2 sm:grid-cols-3 rounded-[12px] bg-surface p-4 md:p-5 text-[13px] md:text-[14px]">
         <div className="flex flex-col">
-          <dt className="text-slate-500">시행일</dt>
-          <dd className="mt-0.5 font-medium text-slate-900">2026년 1월 1일</dd>
+          <dt className="text-muted">시행일</dt>
+          <dd className="mt-0.5 font-medium text-foreground">2026년 1월 1일</dd>
         </div>
         <div className="flex flex-col">
-          <dt className="text-slate-500">버전</dt>
-          <dd className="mt-0.5 font-medium text-slate-900">v1.0</dd>
+          <dt className="text-muted">버전</dt>
+          <dd className="mt-0.5 font-medium text-foreground">v1.0</dd>
         </div>
         <div className="flex flex-col">
-          <dt className="text-slate-500">적용 법령</dt>
-          <dd className="mt-0.5 font-medium text-slate-900">
+          <dt className="text-muted">적용 법령</dt>
+          <dd className="mt-0.5 font-medium text-foreground">
             개인정보 보호법
           </dd>
         </div>
@@ -76,7 +76,7 @@ export default function PrivacyPage() {
             ],
           ]}
         />
-        <p className="text-slate-500">
+        <p className="text-muted">
           ※ 회사는 이용자의 별도 동의 없이 민감정보를 수집하지 않습니다.
         </p>
       </LegalArticle>
@@ -89,23 +89,23 @@ export default function PrivacyPage() {
         <LegalList
           items={[
             <>
-              <strong className="font-semibold text-slate-900">
+              <strong className="font-semibold text-foreground">
                 파기 절차:
               </strong>{" "}
               보유 기간 만료 또는 목적 달성 후 내부 방침에 따라 파기 사유를
               확인하고, 개인정보 보호책임자의 승인을 받아 파기합니다.
             </>,
             <>
-              <strong className="font-semibold text-slate-900">
+              <strong className="font-semibold text-foreground">
                 파기 방법
               </strong>
-              <ul className="list-disc pl-5 mt-1 space-y-1 marker:text-slate-400">
+              <ul className="list-disc pl-5 mt-1 space-y-1 marker:text-muted/50">
                 <li>전자적 파일 형태: 복원이 불가능한 방법으로 영구 삭제</li>
                 <li>종이 문서: 분쇄기로 분쇄하거나 소각</li>
               </ul>
             </>,
             <>
-              <strong className="font-semibold text-slate-900">예외:</strong>{" "}
+              <strong className="font-semibold text-foreground">예외:</strong>{" "}
               관련 법령에 따라 보존이 필요한 경우 해당 법령에서 정한 기간 동안
               별도 보관 후 파기합니다.
             </>,
@@ -237,7 +237,7 @@ export default function PrivacyPage() {
         />
       </LegalArticle>
 
-      <p className="text-[13px] md:text-[14px] text-slate-500 pt-2 border-t border-slate-100">
+      <p className="text-[13px] md:text-[14px] text-muted pt-2 border-t border-border-soft">
         공고일: 2025년 12월 25일 · 시행일: 2026년 1월 1일 · 버전: v1.0
       </p>
     </LegalPage>

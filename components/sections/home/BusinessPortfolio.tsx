@@ -80,7 +80,7 @@ export function BusinessPortfolio() {
               Our Works
             </p>
             <Reveal>
-              <h2 className="mt-3 font-display font-bold text-[clamp(26px,5vw,64px)] leading-[1.05] tracking-[-0.02em]">
+              <h2 className="mt-3 font-display font-bold text-[26px] md:text-[40px] lg:text-[56px] xl:text-[64px] leading-[1.05] tracking-[-0.02em]">
                 Business
                 <br />
                 Portfolio.

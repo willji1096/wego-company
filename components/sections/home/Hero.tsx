@@ -253,7 +253,7 @@ function NewHero() {
             We Design Technology
           </motion.p>
 
-          <h1 className="mt-4 md:mt-8 font-display font-medium text-white tracking-[-0.025em] text-[clamp(40px,10vw,96px)] leading-[1] md:leading-[0.95]">
+          <h1 className="mt-4 md:mt-8 font-display font-medium text-white tracking-[-0.025em] text-[40px] md:text-[72px] lg:text-[96px] leading-[1] md:leading-[0.95]">
             <span className="block">
               <ScrambleText text="We Design" duration={800} delay={120} />
             </span>
@@ -276,7 +276,7 @@ function NewHero() {
             <p className="text-[14px] md:text-[20px] leading-[1.55] md:leading-[1.625]">
               기술을 설계하는 팀, 산업의 미래를 디자인합니다.
             </p>
-            <p className="text-[12px] md:text-[16px] leading-[1.5] text-white/90">
+            <p className="text-[12px] md:text-[16px] leading-[1.5] text-white/70">
               AI와 블록체인의 융합으로 새로운 가치를 창출합니다.
             </p>
           </motion.div>

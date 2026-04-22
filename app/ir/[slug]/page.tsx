@@ -80,7 +80,7 @@ export default async function IRDetailPage({
               </time>
             </div>
             <div className="flex items-center gap-4 flex-wrap">
-              <h1 className="font-display font-bold text-[clamp(24px,3.6vw,42px)] leading-[1.25] tracking-[-0.02em]">
+              <h1 className="font-display font-bold text-[24px] md:text-[32px] lg:text-[36px] xl:text-[42px] leading-[1.25] tracking-[-0.02em]">
                 {item.title}
               </h1>
               {dday !== null && dday > 0 && (

@@ -64,7 +64,7 @@ export function RnDCenter() {
                   R&amp;D CENTER
                 </span>
                 <Reveal>
-                  <h2 className="mt-3 md:mt-6 font-display font-bold text-[clamp(24px,4vw,48px)] leading-[1.1] tracking-[-0.02em]">
+                  <h2 className="mt-3 md:mt-6 font-display font-bold text-[24px] md:text-[32px] lg:text-[40px] xl:text-[48px] leading-[1.1] tracking-[-0.02em]">
                     함께 성장할
                     <br />
                     파트너를 찾습니다.

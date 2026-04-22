@@ -38,7 +38,7 @@ export function ConnectPeople() {
           Vision
         </p>
         <Reveal>
-          <h2 className="mt-3 md:mt-6 font-display font-bold text-[clamp(26px,5vw,64px)] leading-[1.1] tracking-[-0.02em]">
+          <h2 className="mt-3 md:mt-6 font-display font-bold text-[26px] md:text-[40px] lg:text-[56px] xl:text-[64px] leading-[1.1] tracking-[-0.02em]">
             AI로 사람과 세상을
             <br />
             <span className="text-brand">연결합니다.</span>

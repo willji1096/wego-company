@@ -114,7 +114,7 @@ export function IRLoginModal() {
                   <h2 className="mt-5 text-[22px] md:text-[24px] font-bold tracking-[-0.02em] leading-[1.25]">
                     IR Center 주주 전용
                   </h2>
-                  <p className="mt-2 text-[13px] md:text-[14px] leading-[1.65] text-white/80">
+                  <p className="mt-2 text-[13px] md:text-[14px] leading-[1.65] text-white/70">
                     위고컴퍼니 IR Center는 주주 전용 페이지입니다.
                     <br />
                     등록된 계정으로 로그인해 주세요.
@@ -161,7 +161,7 @@ export function IRLoginModal() {
                 </div>
 
                 {error && (
-                  <p className="text-[12.5px] text-red-600 -mt-1">{error}</p>
+                  <p className="text-[13px] text-red-600 -mt-1">{error}</p>
                 )}
 
                 <button
@@ -202,11 +202,11 @@ export function IRLoginModal() {
                     <span className="block text-[14px] font-semibold tracking-[-0.01em] text-foreground">
                       주주 등록 문의
                     </span>
-                    <span className="mt-1 block text-[12.5px] leading-[1.6] text-muted">
+                    <span className="mt-1 block text-[13px] leading-[1.6] text-muted">
                       위고컴퍼니의 주주가 되고 싶으시거나 IR 자료 열람을
                       원하시면 문의해 주세요.
                     </span>
-                    <span className="mt-2 inline-flex items-center gap-1 text-[12.5px] font-semibold text-brand">
+                    <span className="mt-2 inline-flex items-center gap-1 text-[13px] font-semibold text-brand">
                       투자 문의하기
                       <ArrowRight size={12} />
                     </span>

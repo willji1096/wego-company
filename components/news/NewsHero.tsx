@@ -57,7 +57,7 @@ export function NewsHero({
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, ease: [0.19, 1, 0.22, 1] }}
-          className="mt-6 md:mt-8 font-display font-bold text-[clamp(32px,6vw,80px)] leading-[1.05] tracking-[-0.025em]"
+          className="mt-6 md:mt-8 font-display font-bold text-[32px] md:text-[48px] lg:text-[64px] xl:text-[80px] leading-[1.05] tracking-[-0.025em]"
         >
           {title}
         </motion.h1>
