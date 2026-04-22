@@ -35,7 +35,7 @@ export function Changes() {
           Goal
         </p>
         <Reveal>
-          <h2 className="mt-3 md:mt-6 font-display font-bold text-[26px] md:text-[40px] lg:text-[56px] xl:text-[64px] leading-[1.1] tracking-[-1px]">
+          <h2 className="mt-3 md:mt-6 font-display font-bold text-[26px] md:text-[40px] leading-[1.1] tracking-[-1px]">
             우리가 만들어갈
             <br />
             <span className="text-brand">변화</span>
@@ -56,7 +56,7 @@ export function Changes() {
                   {c.num}
                 </span>
                 <div>
-                  <h3 className="text-[16px] md:text-[18px] font-bold tracking-normal text-foreground leading-[1.25]">
+                  <h3 className="text-[18px] md:text-[22px] font-bold tracking-normal text-foreground leading-[1.25]">
                     {c.title}
                   </h3>
                   <p className="mt-2 text-[14px] md:text-[14px] leading-[1.7] text-muted">

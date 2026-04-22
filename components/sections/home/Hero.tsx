@@ -260,7 +260,7 @@ function NewHero() {
             We Design Technology
           </motion.p>
 
-          <h1 className="mt-4 md:mt-8 font-display font-medium text-white tracking-[-2px] text-[40px] md:text-[72px] lg:text-[96px] leading-[1] md:leading-[0.95]">
+          <h1 className="mt-4 md:mt-8 font-display font-medium text-white tracking-[-2px] text-[40px] md:text-[72px] leading-[1]">
             <span className="block">
               <ScrambleText text="We Design" duration={800} delay={120} />
             </span>

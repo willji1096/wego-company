@@ -47,7 +47,7 @@ export function TechIntro() {
               Who We Are
             </p>
             <Reveal>
-              <h2 className="mt-3 md:mt-6 font-display font-bold text-[26px] md:text-[40px] lg:text-[56px] xl:text-[64px] leading-[1.1] tracking-[-1px] text-foreground">
+              <h2 className="mt-3 md:mt-6 font-display font-bold text-[26px] md:text-[40px] leading-[1.1] tracking-[-1px] text-foreground">
                 기술로 산업의 미래를
                 <br />
                 디자인합니다
@@ -92,7 +92,7 @@ export function TechIntro() {
 
                 {/* title + accent bar */}
                 <div className="relative mt-4 md:mt-12">
-                  <h3 className="text-[18px] md:text-[28px] font-bold tracking-[-1px] leading-[1.2]">
+                  <h3 className="text-[18px] md:text-[22px] font-bold tracking-[-1px] leading-[1.2]">
                     {c.title}
                   </h3>
                   <div className="mt-4 h-[2px] w-10 bg-brand" />

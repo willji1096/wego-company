@@ -55,7 +55,7 @@ export default async function NewsDetailPage({
                 {formatDate(item.date)}
               </time>
             </div>
-            <h1 className="font-display font-bold text-[28px] md:text-[32px] lg:text-[40px] xl:text-[48px] leading-[1.25] tracking-[-1px]">
+            <h1 className="font-display font-bold text-[28px] md:text-[40px] leading-[1.25] tracking-[-1px]">
               {item.title}
             </h1>
           </div>

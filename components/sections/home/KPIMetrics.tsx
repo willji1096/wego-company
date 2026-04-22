@@ -22,7 +22,7 @@ export function KPIMetrics() {
                 Performance
               </p>
               <Reveal>
-                <h2 className="mt-3 md:mt-6 font-display font-bold text-[26px] md:text-[36px] lg:text-[40px] leading-[1.1] tracking-[-1px]">
+                <h2 className="mt-3 md:mt-6 font-display font-bold text-[26px] md:text-[40px] leading-[1.1] tracking-[-1px]">
                   Key Metrics
                 </h2>
               </Reveal>

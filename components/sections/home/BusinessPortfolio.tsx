@@ -80,7 +80,7 @@ export function BusinessPortfolio() {
               Our Works
             </p>
             <Reveal>
-              <h2 className="mt-3 md:mt-6 font-display font-bold text-[26px] md:text-[40px] lg:text-[56px] xl:text-[64px] leading-[1.05] tracking-[-1px]">
+              <h2 className="mt-3 md:mt-6 font-display font-bold text-[26px] md:text-[40px] leading-[1.05] tracking-[-1px]">
                 Business
                 <br />
                 Portfolio.
@@ -135,7 +135,7 @@ export function BusinessPortfolio() {
                     />
                   </span>
 
-                  <h3 className="text-[18px] md:text-[24px] font-bold tracking-normal text-foreground leading-[1.3]">
+                  <h3 className="text-[18px] md:text-[22px] font-bold tracking-normal text-foreground leading-[1.3]">
                     {b.name} · {b.korean}
                   </h3>
                   <p className="mt-2 text-[16px] md:text-[16px] leading-[1.55] text-muted-soft">

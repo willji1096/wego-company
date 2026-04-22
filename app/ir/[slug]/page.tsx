@@ -79,7 +79,7 @@ export default async function IRDetailPage({
                 {formatDate(item.date)}
               </time>
             </div>
-            <h1 className="font-display font-bold text-[24px] md:text-[32px] lg:text-[36px] xl:text-[42px] leading-[1.25] tracking-[-1px]">
+            <h1 className="font-display font-bold text-[28px] md:text-[40px] leading-[1.25] tracking-[-1px]">
               {item.title}
             </h1>
             {item.sections?.tagline && (
@@ -174,7 +174,7 @@ export default async function IRDetailPage({
                         <span className="text-[12px] font-bold tracking-[1px] uppercase text-brand">
                           {pos.tag}
                         </span>
-                        <h3 className="mt-2 text-[18px] md:text-[18px] font-bold text-foreground leading-[1.25]">
+                        <h3 className="mt-2 text-[18px] md:text-[22px] font-bold text-foreground leading-[1.25]">
                           {pos.title}
                         </h3>
                         <p className="mt-1 text-[12px] md:text-[14px] text-muted">

@@ -64,7 +64,7 @@ export function RnDCenter() {
                   R&amp;D CENTER
                 </span>
                 <Reveal>
-                  <h2 className="mt-3 md:mt-6 font-display font-bold text-[24px] md:text-[32px] lg:text-[40px] xl:text-[48px] leading-[1.1] tracking-[-1px]">
+                  <h2 className="mt-3 md:mt-6 font-display font-bold text-[26px] md:text-[40px] leading-[1.1] tracking-[-1px]">
                     함께 성장할
                     <br />
                     파트너를 찾습니다.
@@ -95,7 +95,7 @@ export function RnDCenter() {
                       <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-white/10">
                         <c.Icon size={22} className="text-white" />
                       </span>
-                      <h3 className="mt-3 md:mt-5 text-[16px] md:text-[20px] font-bold tracking-normal leading-[1.25]">
+                      <h3 className="mt-3 md:mt-5 text-[18px] md:text-[22px] font-bold tracking-normal leading-[1.25]">
                         {c.title}
                       </h3>
                       <p className="mt-3 text-[14px] md:text-[14px] leading-[1.65] text-white/70">

@@ -20,7 +20,7 @@ export function WeGoNow() {
                 Updates
               </p>
               <Reveal>
-                <h2 className="mt-3 font-display font-bold text-[26px] md:text-[36px] lg:text-[44px] leading-[1.1] tracking-[-1px]">
+                <h2 className="mt-3 font-display font-bold text-[26px] md:text-[40px] leading-[1.1] tracking-[-1px]">
                   WeGo Now.
                 </h2>
               </Reveal>
@@ -53,7 +53,7 @@ export function WeGoNow() {
                         {n.category}
                       </span>
                     </div>
-                    <h3 className="mt-3 md:mt-5 text-[16px] md:text-[16px] font-semibold leading-[1.5] tracking-normal text-foreground line-clamp-2 group-hover:text-brand transition-colors">
+                    <h3 className="mt-3 md:mt-5 text-[18px] md:text-[22px] font-semibold leading-[1.25] tracking-normal text-foreground line-clamp-2 group-hover:text-brand transition-colors">
                       {n.title}
                     </h3>
                     <time className="mt-3 text-[12px] md:text-[14px] text-muted tracking-normal">

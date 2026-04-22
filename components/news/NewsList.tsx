@@ -83,7 +83,7 @@ export function NewsList() {
                     </span>
                   </div>
                   <div className="flex flex-col flex-1 p-6 md:p-8">
-                    <h3 className="text-[16px] md:text-[16px] font-semibold leading-[1.5] tracking-normal text-foreground line-clamp-2 group-hover:text-brand transition-colors">
+                    <h3 className="text-[18px] md:text-[22px] font-semibold leading-[1.25] tracking-normal text-foreground line-clamp-2 group-hover:text-brand transition-colors">
                       {item.title}
                     </h3>
                     <p className="mt-3 text-[14px] text-muted line-clamp-2 leading-[1.6] flex-1">

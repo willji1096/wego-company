@@ -26,7 +26,7 @@ export function ContactCTA() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-80px" }}
               transition={{ duration: 0.9, ease: [0.19, 1, 0.22, 1] }}
-              className="font-display font-bold text-[30px] md:text-[40px] lg:text-[48px] xl:text-[60px] leading-[1.15] tracking-[-1px] text-balance"
+              className="font-display font-bold text-[26px] md:text-[40px] leading-[1.15] tracking-[-1px] text-balance"
             >
               AI와 보안 기술로
               <br />
