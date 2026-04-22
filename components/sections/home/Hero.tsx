@@ -283,7 +283,7 @@ function NewHero() {
             <p className="text-[16px] md:text-[20px] leading-[1.7]">
               기술을 설계하는 팀, 산업의 미래를 디자인합니다.
             </p>
-            <p className="text-[14px] md:text-[16px] leading-[1.6] text-white/90">
+            <p className="text-[16px] leading-[1.6] text-white/90">
               AI와 블록체인의 융합으로 새로운 가치를 창출합니다.
             </p>
           </motion.div>
