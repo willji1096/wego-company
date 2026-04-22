@@ -41,7 +41,7 @@ export default async function IRDetailPage({
     <>
       {/* Hero */}
       <section
-        className={`relative overflow-hidden pt-28 md:pt-36 pb-12 md:pb-28 ${
+        className={`relative overflow-hidden pt-28 md:pt-40 pb-16 md:pb-32 ${
           hasJob ? "bg-brand text-white" : "bg-ink text-white"
         }`}
       >
@@ -99,7 +99,7 @@ export default async function IRDetailPage({
       </section>
 
       {/* Body */}
-      <article className="bg-white py-16 md:py-20">
+      <article className="bg-white py-14 md:py-28">
         <div className="container-base max-w-[1000px]">
           {hasJob && item.sections ? (
             <>
@@ -216,7 +216,7 @@ export default async function IRDetailPage({
         </div>
       </article>
 
-      <section className="border-t border-border-soft bg-white py-10 md:py-14">
+      <section className="border-t border-border-soft bg-white py-12 md:py-16">
         <div className="container-base text-center">
           <Link
             href="/ir"

@@ -14,7 +14,7 @@ export default function NewsPage() {
         title="WeGo Now."
         subtitle="위고컴퍼니의 최근 뉴스, 보도자료, 공지사항을 확인하세요."
       />
-      <section className="py-14 md:py-20">
+      <section className="py-16 md:py-28">
         <div className="container-base">
           <NewsList />
         </div>

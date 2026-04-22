@@ -380,7 +380,7 @@ export function Hero() {
   const [variant, setVariant] = useState<HeroVariant>("new");
 
   return (
-    <section className="relative bg-white pt-16 md:pt-28 pb-8 md:pb-24">
+    <section className="relative bg-white pt-16 md:pt-28 pb-12 md:pb-28">
       <div className="container-base">
         <VariantToggle value={variant} onChange={setVariant} />
         <AnimatePresence mode="wait">

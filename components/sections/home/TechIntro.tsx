@@ -39,7 +39,7 @@ const CARDS: Card[] = [
 
 export function TechIntro() {
   return (
-    <section className="relative py-8 md:py-24 bg-white">
+    <section className="relative py-12 md:py-28 bg-white">
       <div className="container-base">
         <div className="grid gap-6 md:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] md:gap-16 mb-6 md:mb-20">
           <div>

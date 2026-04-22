@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export function AboutHero() {
   return (
-    <section className="relative overflow-hidden bg-ink text-white pt-28 md:pt-36 pb-12 md:pb-32">
+    <section className="relative overflow-hidden bg-ink text-white pt-28 md:pt-40 pb-16 md:pb-36">
       <div
         aria-hidden
         className="absolute -top-40 -right-40 w-[640px] h-[640px] rounded-full bg-brand/20 blur-[160px] pointer-events-none"

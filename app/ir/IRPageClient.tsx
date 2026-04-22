@@ -28,7 +28,7 @@ export function IRPageClient() {
         subtitle="위고 컴퍼니의 새로운 소식을 전해드립니다."
       />
 
-      <section className="py-14 md:py-20 bg-white">
+      <section className="py-16 md:py-28 bg-white">
         <div className="container-base">
           <div className="flex items-center justify-between gap-4 mb-6 md:mb-10">
             <p className="text-[14px] md:text-[16px] text-foreground">

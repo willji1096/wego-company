@@ -33,7 +33,7 @@ export default async function NewsDetailPage({
   return (
     <>
       {/* Hero */}
-      <section className="relative overflow-hidden bg-ink text-white pt-28 md:pt-36 pb-12 md:pb-28">
+      <section className="relative overflow-hidden bg-ink text-white pt-28 md:pt-40 pb-16 md:pb-32">
         <div
           aria-hidden
           className="absolute -top-40 -right-40 w-[560px] h-[560px] rounded-full bg-brand/15 blur-[140px] pointer-events-none"
@@ -63,7 +63,7 @@ export default async function NewsDetailPage({
       </section>
 
       {/* Body */}
-      <article className="py-12 md:py-24 bg-white">
+      <article className="py-14 md:py-28 bg-white">
         <div className="container-base max-w-[760px]">
           <div className="border-l-[3px] border-brand pl-5 py-1 mb-7 md:mb-10">
             <p className="text-[16px] md:text-[18px] font-bold leading-[1.7] text-foreground">
@@ -77,7 +77,7 @@ export default async function NewsDetailPage({
       </article>
 
       {/* Prev/Next */}
-      <section className="border-t border-border-soft bg-white py-10 md:py-14">
+      <section className="border-t border-border-soft bg-white py-12 md:py-16">
         <div className="container-base max-w-[760px]">
           <div className="grid gap-4 md:grid-cols-2">
             {prev ? (

@@ -16,7 +16,7 @@ export function LegalPage({
     <>
       <NewsHero eyebrow={eyebrow} title={title} subtitle={meta} />
 
-      <section className="bg-white py-12 md:py-20">
+      <section className="bg-white py-14 md:py-28">
         <div className="container-base max-w-[920px] mx-auto">
           <div className="legal-doc space-y-10 md:space-y-14">{children}</div>
         </div>

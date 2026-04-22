@@ -8,9 +8,9 @@ export function ContactCTA() {
   const setOpen = useContactStore((s) => s.setOpen);
 
   return (
-    <section className="py-8 md:py-20">
+    <section className="py-12 md:py-28">
       <div className="container-base">
-        <div className="relative overflow-hidden rounded-[14px] md:rounded-[32px] bg-brand text-white px-4 py-8 md:py-20 lg:py-32">
+        <div className="relative overflow-hidden rounded-[14px] md:rounded-[32px] bg-brand text-white px-4 py-12 md:py-24 lg:py-32">
           <div
             aria-hidden
             className="absolute -top-[300px] right-[-100px] w-[600px] h-[600px] rounded-full bg-white/15 blur-[140px] pointer-events-none"

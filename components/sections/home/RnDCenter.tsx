@@ -43,7 +43,7 @@ const CARDS: IndustryCard[] = [
 export function RnDCenter() {
   const openContact = useContactStore((s) => s.setOpen);
   return (
-    <section className="relative py-8 md:py-20">
+    <section className="relative py-12 md:py-28">
       <div className="container-base">
         <div className="relative overflow-hidden rounded-[16px] md:rounded-[32px] bg-ink text-white">
           {/* glow decoration */}

@@ -11,7 +11,7 @@ export function WeGoNow() {
   const items = NEWS_ITEMS.slice(0, 4);
 
   return (
-    <section className="relative py-8 md:py-20 bg-white">
+    <section className="relative py-12 md:py-28 bg-white">
       <div className="container-base">
         <div className="rounded-[12px] md:rounded-[32px] bg-surface px-4 py-5 md:px-16 md:py-16 lg:px-20">
           <div className="flex items-end justify-between gap-6 mb-6 md:mb-16">

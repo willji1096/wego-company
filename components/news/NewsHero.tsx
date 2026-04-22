@@ -16,7 +16,7 @@ export function NewsHero({
   const isDark = tone === "dark";
   return (
     <section
-      className={`relative overflow-hidden pt-28 md:pt-36 pb-12 md:pb-28 ${
+      className={`relative overflow-hidden pt-28 md:pt-40 pb-16 md:pb-32 ${
         isDark ? "bg-ink text-white" : "bg-white text-foreground"
       }`}
     >

@@ -4,7 +4,7 @@ import { Reveal } from "@/components/ui/Reveal";
 
 export function Beliefs() {
   return (
-    <section className="py-8 md:py-24 bg-white">
+    <section className="py-12 md:py-28 bg-white">
       <div className="container-base">
         <p className="flex items-center gap-3 text-[14px] md:text-[14px] font-semibold tracking-[0.22em] uppercase text-brand">
           <span className="h-px w-8 bg-brand" />

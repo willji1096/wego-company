@@ -12,7 +12,7 @@ const METRICS = [
 
 export function KPIMetrics() {
   return (
-    <section className="relative py-8 md:py-20 bg-white">
+    <section className="relative py-12 md:py-28 bg-white">
       <div className="container-base">
         <div className="relative rounded-[12px] md:rounded-[32px] bg-surface px-4 py-5 md:px-16 md:py-16 lg:px-20">
           {/* Header row */}
