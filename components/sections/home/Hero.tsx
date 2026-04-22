@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 
 const SCRAMBLE_CHARS = "!<>-_\\/[]{}—=+*^?#";
@@ -158,6 +158,8 @@ function OldHero() {
     <motion.div
       initial={false}
       animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.25 }}
       className="grid gap-5 md:gap-6 md:grid-cols-[minmax(0,1.95fr)_minmax(0,1fr)]"
     >
       {/* Left — blue panel with liquid-noise bg */}
@@ -237,6 +239,8 @@ function NewHero() {
     <motion.div
       initial={false}
       animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.25 }}
       className="grid gap-5 md:gap-6 md:grid-cols-[minmax(0,1.95fr)_minmax(0,1fr)]"
     >
       {/* Left — clean blue panel */}
@@ -341,7 +345,7 @@ function VariantToggle({
       <div
         role="tablist"
         aria-label="Hero version toggle"
-        className="inline-flex items-center gap-1 rounded-full border border-slate-200 bg-slate-50 p-1 text-[12px] font-medium"
+        className="inline-flex items-center gap-1 rounded-full border border-border bg-surface p-1 text-[12px] font-medium"
       >
         {(["new", "old"] as const).map((key) => {
           const selected = value === key;
@@ -355,7 +359,7 @@ function VariantToggle({
               className={`rounded-full px-3 md:px-4 py-1.5 tracking-[0.12em] uppercase transition-colors ${
                 selected
                   ? "bg-brand text-white shadow-sm"
-                  : "text-slate-500 hover:text-slate-800"
+                  : "text-muted hover:text-foreground"
               }`}
             >
               {key === "new" ? "New" : "Old"}
@@ -374,7 +378,13 @@ export function Hero() {
     <section className="relative bg-white pt-16 md:pt-28 pb-8 md:pb-24">
       <div className="container-base">
         <VariantToggle value={variant} onChange={setVariant} />
-        {variant === "new" ? <NewHero /> : <OldHero />}
+        <AnimatePresence mode="wait">
+          {variant === "new" ? (
+            <NewHero key="new" />
+          ) : (
+            <OldHero key="old" />
+          )}
+        </AnimatePresence>
       </div>
     </section>
   );
