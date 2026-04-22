@@ -58,7 +58,7 @@ export function ConnectPeople() {
               <motion.div
                 whileHover={{ y: -6 }}
                 transition={{ duration: 0.3 }}
-                className="rounded-[16px] md:rounded-[24px] bg-white border border-border p-4 md:p-8 min-h-[180px] md:min-h-[220px] flex flex-col"
+                className="rounded-[16px] md:rounded-[24px] bg-white border border-border p-6 md:p-8 min-h-[180px] md:min-h-[220px] flex flex-col"
               >
                 <span className="flex h-12 w-12 items-center justify-center rounded-[12px] bg-brand-soft text-brand">
                   <p.Icon size={22} strokeWidth={1.8} />

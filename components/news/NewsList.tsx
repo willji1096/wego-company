@@ -82,7 +82,7 @@ export function NewsList() {
                       {item.category}
                     </span>
                   </div>
-                  <div className="flex flex-col flex-1 p-4 md:p-7">
+                  <div className="flex flex-col flex-1 p-6 md:p-8">
                     <h3 className="text-[16px] md:text-[16px] font-semibold leading-[1.5] tracking-[-0.01em] text-foreground line-clamp-2 group-hover:text-brand transition-colors">
                       {item.title}
                     </h3>

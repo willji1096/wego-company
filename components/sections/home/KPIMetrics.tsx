@@ -14,7 +14,7 @@ export function KPIMetrics() {
   return (
     <section className="relative py-12 md:py-28 bg-white">
       <div className="container-base">
-        <div className="relative rounded-[12px] md:rounded-[32px] bg-surface px-4 py-5 md:px-16 md:py-16 lg:px-20">
+        <div className="relative rounded-[12px] md:rounded-[32px] bg-surface px-6 py-8 md:px-16 md:py-16 lg:px-20">
           {/* Header row */}
           <div className="grid gap-6 md:grid-cols-[auto_1fr_auto] md:items-end md:gap-10 mb-8 md:mb-16">
             <div>

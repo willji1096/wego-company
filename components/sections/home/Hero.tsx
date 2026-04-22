@@ -249,7 +249,7 @@ function NewHero() {
       className="grid gap-5 md:gap-6 md:grid-cols-[minmax(0,1.95fr)_minmax(0,1fr)]"
     >
       {/* Left — clean blue panel */}
-      <div className="relative overflow-hidden rounded-[28px] md:rounded-[40px] bg-brand p-4 md:p-14 lg:p-16 min-h-[420px] md:min-h-[600px] flex flex-col justify-center">
+      <div className="relative overflow-hidden rounded-[28px] md:rounded-[40px] bg-brand p-6 md:p-14 lg:p-16 min-h-[420px] md:min-h-[600px] flex flex-col justify-center">
         <div className="relative max-w-[720px]">
           <motion.p
             initial={{ opacity: 0, y: 10 }}

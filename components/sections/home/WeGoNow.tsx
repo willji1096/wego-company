@@ -13,7 +13,7 @@ export function WeGoNow() {
   return (
     <section className="relative py-12 md:py-28 bg-white">
       <div className="container-base">
-        <div className="rounded-[12px] md:rounded-[32px] bg-surface px-4 py-5 md:px-16 md:py-16 lg:px-20">
+        <div className="rounded-[12px] md:rounded-[32px] bg-surface px-6 py-8 md:px-16 md:py-16 lg:px-20">
           <div className="flex items-end justify-between gap-6 mb-6 md:mb-16">
             <div>
               <p className="text-[14px] md:text-[14px] font-semibold tracking-[0.22em] uppercase text-brand">

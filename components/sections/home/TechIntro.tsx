@@ -72,7 +72,7 @@ export function TechIntro() {
               <motion.article
                 whileHover={{ y: -6 }}
                 transition={{ duration: 0.35, ease: [0.19, 1, 0.22, 1] }}
-                className="group relative overflow-hidden rounded-[24px] md:rounded-[40px] bg-[#1C1831] text-white p-4 md:p-8 md:min-h-[340px] flex flex-col"
+                className="group relative overflow-hidden rounded-[24px] md:rounded-[40px] bg-[#1C1831] text-white p-6 md:p-8 md:min-h-[340px] flex flex-col"
               >
                 {/* bottom-left blue glow */}
                 <div

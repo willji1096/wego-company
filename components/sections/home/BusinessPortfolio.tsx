@@ -120,7 +120,7 @@ export function BusinessPortfolio() {
                 </div>
 
                 {/* content */}
-                <div className="relative flex flex-col flex-1 p-4 md:p-8 pt-8 md:pt-10">
+                <div className="relative flex flex-col flex-1 p-6 md:p-8 pt-8 md:pt-10">
                   {/* floating badge */}
                   <span
                     className="absolute right-5 md:right-8 -top-8 md:-top-10 flex h-20 w-20 items-center justify-center rounded-[12px] md:rounded-[16px] ring-4 ring-white shadow-[0_10px_15px_-3px_rgba(0,0,0,0.1),0_4px_6px_-4px_rgba(0,0,0,0.1)]"

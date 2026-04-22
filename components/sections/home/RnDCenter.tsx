@@ -56,7 +56,7 @@ export function RnDCenter() {
             className="absolute -bottom-[300px] -left-[200px] w-[600px] h-[600px] rounded-full bg-brand/15 blur-[160px] pointer-events-none"
           />
 
-          <div className="relative p-4 md:p-16 lg:p-20">
+          <div className="relative p-6 md:p-16 lg:p-20">
             <div className="grid gap-8 md:grid-cols-[minmax(0,0.9fr)_minmax(0,1.2fr)] md:gap-16">
               {/* Left copy */}
               <div className="flex flex-col">
@@ -91,7 +91,7 @@ export function RnDCenter() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-5">
                 {CARDS.map((c, i) => (
                   <Reveal key={c.title} delay={i * 0.08}>
-                    <div className="h-full rounded-[12px] md:rounded-2xl bg-white/5 border border-white/10 p-4 md:p-7 backdrop-blur-sm transition-colors hover:bg-white/10">
+                    <div className="h-full rounded-[12px] md:rounded-2xl bg-white/5 border border-white/10 p-6 md:p-8 backdrop-blur-sm transition-colors hover:bg-white/10">
                       <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-white/10">
                         <c.Icon size={22} className="text-white" />
                       </span>

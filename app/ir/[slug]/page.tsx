@@ -108,7 +108,7 @@ export default async function IRDetailPage({
                   <h2 className="inline-block border-b-[3px] border-brand pb-1.5 text-[18px] md:text-[20px] font-bold leading-[1.3] mb-6">
                     채용 개요
                   </h2>
-                  <div className="rounded-[14px] md:rounded-[20px] bg-surface p-4 md:p-8">
+                  <div className="rounded-[14px] md:rounded-[20px] bg-surface p-6 md:p-8">
                     <dl className="grid gap-3">
                       {item.sections.overview.map((row) => (
                         <div

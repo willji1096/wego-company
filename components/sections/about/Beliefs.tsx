@@ -20,7 +20,7 @@ export function Beliefs() {
         </Reveal>
 
         <Reveal delay={0.15}>
-          <div className="mt-6 md:mt-16 rounded-[12px] md:rounded-[28px] bg-surface p-4 md:p-14 lg:p-16">
+          <div className="mt-6 md:mt-16 rounded-[12px] md:rounded-[28px] bg-surface p-6 md:p-14 lg:p-16">
             <p className="text-[16px] md:text-[24px] font-bold tracking-[-0.01em] text-foreground leading-[1.6]">
               기술은 사람을 위해 존재해야 합니다.
             </p>

@@ -193,7 +193,7 @@ export function IRLoginModal() {
                 <button
                   type="button"
                   onClick={goContact}
-                  className="w-full text-left rounded-[14px] bg-surface hover:bg-[#eef2f7] transition-colors p-4 md:p-5 flex items-start gap-3"
+                  className="w-full text-left rounded-[14px] bg-surface hover:bg-[#eef2f7] transition-colors p-5 md:p-6 flex items-start gap-3"
                 >
                   <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-[10px] bg-white border border-border-soft text-[18px] leading-none">
                     📩
