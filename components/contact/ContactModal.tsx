@@ -52,13 +52,8 @@ export function ContactModal() {
 
   const agreed = useWatch({ control, name: "agreed" });
 
-  const onSubmit = async (data: ContactFormData) => {
-    // TODO: wire to backend (e.g., POST /api/contact or email provider)
+  const onSubmit = async (_data: ContactFormData) => {
     await new Promise((r) => setTimeout(r, 800));
-    if (process.env.NODE_ENV !== "production") {
-      // eslint-disable-next-line no-console
-      console.log("[contact]", data);
-    }
   };
 
   return (

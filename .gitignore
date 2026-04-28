@@ -39,10 +39,3 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
-.gstack/
-
-# AI workspace (keep Figma specs + screenshots only)
-.aing/logs/
-.aing/state/
-.aing/telemetry/
-.aing/tool-results/
